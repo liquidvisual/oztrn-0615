@@ -32,13 +32,12 @@
 	@media #{$large-up} {
 	    position: absolute;
         right: rem-calc(340);
-
-	    bottom: 0;
+	    bottom: -15px;
         // top: 0;
         // bottom: 39px;
 	    // width: 100%; // locked
 	    // padding: 0 $column-gutter/2; // locked
-	    background: aqua;
+	    // background: aqua;
 	}
 }
 
@@ -50,6 +49,7 @@
 	list-style: none; // locked
 	margin: 0; // locked
 	font-size: rem-calc(14);
+    font-style: italic;
     text-transform: lowercase;
 }
 
@@ -59,7 +59,6 @@
 
 .topbar > ul {
 	display: table;
-    font-style: italic;
 	// width: 100%; // option A
 	float: right; // option B
 	// background: aqua;
@@ -78,7 +77,7 @@
 .topbar > ul > li > .anchor {
 	display: block;
 	line-height: rem-calc(40); // opinionated
-	padding: rem-calc(0 15); // opinionated
+	padding: rem-calc(0 8); // opinionated
 	// text-transform: uppercase;
 
 	&:hover {
@@ -94,7 +93,7 @@
     @include transition('background-color');
     display: block;
     text-align: center;
-    padding: rem-calc(10 15);
+    // padding: rem-calc(10 15);
     // color: $body-font-color;
     color: lighten(#7C7776, 30%);
 }
@@ -136,7 +135,7 @@
     width: rem-calc(220);
     background: #DCDBDB;
     margin: 0;
-    padding: rem-calc(16);
+    // padding: rem-calc(16);
 }
 
 .topbar > ul > li:last-child .dropdown {

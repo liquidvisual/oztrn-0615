@@ -11,18 +11,59 @@
 // Sidebar
 //-----------------------------------------------------------------
 
+.sidebar {
+	position: absolute;
+	top: 140px; // should be header height
+	right: 96px;
+	width: rem-calc(246);
+}
+
+//=========================================
+// Sidebar Content
+//=========================================
+
+.sidebar-content {
+	position: relative;
+	height: rem-calc(750);
+	margin-bottom: rem-calc(50);
+	padding: rem-calc(170 0 38 0);
+	background: url(../img/template/grey-triangle@2x.png);
+	background-size: contain;
+
+	.sidebar-content-scroller {
+		// padding: rem-calc(170 38 38 38);
+		padding: rem-calc(0 38);
+		overflow-y: auto;
+		// background: ;
+		height: rem-calc(430);
+	}
+}
+
+//=========================================
+//
+//=========================================
+
+.sidebar-footer {
+	font-style: italic;
+
+	p {
+		font-size: rem-calc(13);
+		color: #7C7776; // is this body text color?
+	}
+}
+
+//=========================================
+//
+//=========================================
+
 .sidebar-vertical-strip {
 	position: fixed;
 	top: 0;
 	right: 0;
 	width: rem-calc(96);
 	height: 100vh;
-	background: pink;
 	background-image: url(../img/template/home-strip@2x.png);
 	background-repeat: no-repeat;
 	background-size: cover;
+	background-position: bottom;
 }
-
-//=========================================
-//
-//=========================================

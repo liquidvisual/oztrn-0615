@@ -12,12 +12,32 @@
 //-----------------------------------------------------------------
 
 .button {
-	background: #EDEDEE;
+	background: #E8E7E7;
 	color: $body-font-color;
-	border: 1px solid $primary-color;
 	padding: rem-calc(3 40);
 }
 
 //=========================================
 //
 //=========================================
+
+.news-button {
+	@include transition('color');
+	display: block;
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	height: rem-calc(150);
+	line-height: rem-calc(145);
+	padding-left: rem-calc(90);
+	background: url(../img/template/orange-triangle@2x.png) no-repeat;
+	background-size: cover;
+	font-size: rem-calc(23);
+	font-style: italic;
+	color: white;
+	text-align: center;
+
+	&:hover {
+		color: darken(#ED5C31, 30%);
+	}
+}
