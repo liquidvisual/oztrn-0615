@@ -4,10 +4,44 @@ layout: master
 
 {% assign settings = site.data.settings %}
 
-<aside class="sidebar">
+<!-- STAGE -->
+<section class="stage">
 
-	<!-- Sidebar -->
-	<div class="sidebar-content">
+	<main class="main clearfix">
+
+		{% if true %}
+		<div class="logo">
+			<img width="116" src="/img/template/right-now-coaching-logo@2x.png">
+		</div>
+		{% endif %}
+
+		<header class="header">
+			<div class="">right.<b>now</b>. coaching</div>
+		</header>
+
+		<div class="main-body">
+			<h1>right.now. coaching</h1>
+
+			<h3>what do you want to learn more about?</h3>
+
+			<p>Public policy? Management? Influence? Executive presence? Problem solving? Managing tricky people situations? Meeting your boss’s needs? Leading with energy and vision? We’ll work with you to customise the way you learn and develop what matters to you.</p>
+
+			<p>You choose from a set of learning objectives that suit you, and adapt them to suit you with your executive coach face to face or on line in your first session . You decide whether you want feedback during the process, and choose from multiple ways that might be collected. You and your coach then use the oztrain secure learning site to review objectives, discuss the issues, share resources, report on progress, explore new ways to learn and develop, and to create the report back to your manager about process and outcomes.</p>
+
+			<h3>benefits to your organisation?</h3>
+
+			<p>Because we ask each learner a series of questions regularly, your organization gains regular reports on how their staff are thinking about key issues, not just their learning journey. Because we ask your leaders questions regularly, learners find out what their bosses think are priorities and imperatives.</p>
+
+			<h3>who works with you?</h3>
+
+			<p>Each learner has their own core coach, who in turn brings in any experts needed to supplement and enrich your learning experience. Need to talk to an ex chief executive about how they solved a particular problem? Need to talk to a University lecturer about the theory behind your problem? Need to talk to a subject expert about your issue? We’ll find them, and when you log on to your learning site, they’ll be side by side with your</p>
+		</div>
+	</main>
+</section>
+
+<!-- SIDEBAR -->
+<aside class="sidebar">
+	<div class="sidebar-content show-for-xlarge-up">
 		<div class="sidebar-content-scroller">
 
 			<p><img src="img/template/right-now-coaching-logo@2x.png"></p>
@@ -29,11 +63,7 @@ layout: master
 	</div>
 
 	<div class="sidebar-footer">
-		<p>{{ settings.company }} <br>
-		   {{ settings.address }} <br>
-		   <a href="mailto:{{ settings.email }}">{{ settings.email }}</a></p>
-
-		<a class="button fill-grey-color">newsletter ></a>
+		{% include footer.html %}
 	</div>
 
 	<!-- Sidebar Vertical Strip -->
@@ -48,41 +78,3 @@ layout: master
 		</ul>
 	</div>
 </aside>
-
-<!-- STAGE -->
-<section class="stage">
-
-	<main class="main">
-
-		<div class="logo">
-			<img width="116" src="/img/template/right-now-coaching-logo@2x.png">
-		</div>
-
-		<header class="header">
-			<div class="">right.<b>now</b>. coaching</div>
-		</header>
-		<div class="main-body">
-			<h1>right.now. coaching</h1>
-
-			<h3>what do you want to learn more about?</h3>
-
-			<p>Public policy? Management? Influence? Executive presence? Problem solving? Managing tricky people situations? Meeting your boss’s needs? Leading with energy and vision? We’ll work with you to customise the way you learn and develop what matters to you.</p>
-
-			<p>You choose from a set of learning objectives that suit you, and adapt them to suit you with your executive coach face to face or on line in your first session . You decide whether you want feedback during the process, and choose from multiple ways that might be collected. You and your coach then use the oztrain secure learning site to review objectives, discuss the issues, share resources, report on progress, explore new ways to learn and develop, and to create the report back to your manager about process and outcomes.</p>
-
-			<h3>benefits to your organisation?</h3>
-
-			<p>Because we ask each learner a series of questions regularly, your organization gains regular reports on how their staff are thinking about key issues, not just their learning journey. Because we ask your leaders questions regularly, learners find out what their bosses think are priorities and imperatives.</p>
-
-			<h3>who works with you?</h3>
-
-			<p>Each learner has their own core coach, who in turn brings in any experts needed to supplement and enrich your learning experience. Need to talk to an ex chief executive about how they solved a particular problem? Need to talk to a University lecturer about the theory behind your problem? Need to talk to a subject expert about your issue? We’ll find them, and when you log on to your learning site, they’ll be side by side with your</p>
-		</div>
-	</main>
-	<!-- <div class="outer-row">
-		<div class="medium-5 columns">
-
-			<p style="font-size: 29px;"><b>oz</b>train is a training and consultancy firm with an enviable reputation for the delivery of excellent tailor made programs for public and private sectors which build the capabilities of people and the capacity of departments and companies with a focus on the development of people.</p>
-		</div>
-	</div> -->
-</section>

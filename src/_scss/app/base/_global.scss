@@ -23,6 +23,12 @@ html, body {
     height: 100%;
 }
 
+.lv-page {
+	@media #{$small-only} {
+	    padding-top: rem-calc(65);
+	}
+}
+
 //=========================================
 // Snap Grid
 //

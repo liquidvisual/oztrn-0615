@@ -7,18 +7,26 @@
 //-----------------------------------------------------------------
 // Variables
 //-----------------------------------------------------------------
+
+$sidebar-vertical-strip-width: rem-calc(96);
+
 //-----------------------------------------------------------------
 // Sidebar
 //-----------------------------------------------------------------
 
 .sidebar {
-	position: absolute;
-	top: 140px; // should be header height
-	right: 0;
-	width: rem-calc(246);
+	padding: rem-calc(15 0 0 0);
+	margin: rem-calc(0 15);
+	border-top: 1px solid #eee;
 
-	@media #{$large-up} {
+	@media #{$xlarge-up} {
+	    position: absolute;
 	    right: 96px - 1; // account for image oddity
+	    top: 140px; // should be header height
+	    margin: 0;
+	    padding: 0; // important
+	    border: 0;
+	    width: rem-calc(246);
 	}
 }
 
@@ -35,10 +43,8 @@
 	background-size: contain;
 
 	.sidebar-content-scroller {
-		// padding: rem-calc(170 38 38 38);
 		padding: rem-calc(0 38);
 		overflow-y: auto;
-		// background: ;
 		height: rem-calc(430);
 	}
 }
@@ -64,7 +70,7 @@
 	position: fixed;
 	top: 0;
 	right: 0;
-	width: rem-calc(96);
+	width: $sidebar-vertical-strip-width;
 	height: 100vh;
 	background-image: url(../img/template/home-strip@2x.png);
 	background-repeat: no-repeat;

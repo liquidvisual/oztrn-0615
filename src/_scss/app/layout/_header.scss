@@ -14,10 +14,24 @@
 .global-header {
 	@include transition('all');
 	background: white;
-	padding-top: rem-calc(20);
+	z-index: 1;
+
+	&.has-border {
+		@media #{$small-only} {
+		    border-bottom: 1px solid #e1e1e1;
+		}
+	}
+
+	@media #{$small-only} {
+	    position: fixed;
+	    top: 0;
+	    width: 100%;
+	    height: rem-calc(50);
+	}
 
 	@media #{$medium-up} {
 	    margin-bottom: rem-calc(50);
+	    padding-top: rem-calc(20);
 	}
 
 	@media #{$large-up} {
@@ -48,9 +62,9 @@
 
 	img {
 		@media #{$small-only} {
-			width: 80px;
+			width: auto;
+			height: 50px;
 			padding: rem-calc(5 5 5 15);
-			// border: 5px solid white;
 		}
 
 		@media #{$medium-up} {
@@ -67,7 +81,7 @@
 
 .header-mobile-menu {
 	position: absolute;
-	top: 17px; // looks right
+	top: 15px; // looks right
 	right: 15px;
 
 	@media #{$small-only} {
@@ -75,7 +89,8 @@
 	}
 
 	@media #{$medium-up} {
-		position: fixed;
+		// position: fixed;
+		position: absolute;
 	    right: 40px;
 	    top: 30px;
 	}
