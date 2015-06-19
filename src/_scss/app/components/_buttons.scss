@@ -12,14 +12,75 @@
 //-----------------------------------------------------------------
 
 .button {
+	position: relative;
+	display: inline-block;
+	padding: rem-calc(3 8 3 8);
 	background: #E8E7E7;
+	text-align: left;
+	font-size: 13px;
+	font-style: italic;
 	color: $body-font-color;
-	padding: rem-calc(3 40);
+	min-width: rem-calc(170);
+
+	.arrow {
+		// position: absolute;
+		// right: rem-calc(20);
+		float: right;
+	}
+}
+
+//-----------------------------------------------------------------
+// Button Colors
+//-----------------------------------------------------------------
+
+.button {
+	&.fill-primary-color,
+	&.fill-secondary-color,
+	&.fill-tertiary-color,
+	&.fill-quaternary-color {
+		color: white;
+	}
+
+	&.fill-primary-color {
+		background: $primary-color;
+		&:hover {
+			background: darken($primary-color, 10%);
+		}
+	}
+	&.fill-secondary-color {
+		background: $secondary-color;
+		&:hover {
+			background: darken($secondary-color, 10%);
+		}
+	}
+	&.fill-tertiary-color {
+		background: $tertiary-color;
+		&:hover {
+			background: darken($tertiary-color, 10%);
+		}
+	}
+	&.fill-quaternary-color {
+		background: $quaternary-color;
+		&:hover {
+			background: darken($quaternary-color, 10%);
+		}
+	}
 }
 
 //=========================================
-//
+// Context
 //=========================================
+
+.sidebar-content .button {
+	width: 100%;
+	margin-bottom: rem-calc(8);
+	padding: rem-calc(3 20);
+	font-size: 14px;
+}
+
+//-----------------------------------------------------------------
+// News Button (homepage only)
+//-----------------------------------------------------------------
 
 .news-button {
 	@include transition('color');
@@ -29,7 +90,7 @@
 	width: 100%;
 	height: rem-calc(150);
 	line-height: rem-calc(145);
-	padding-left: rem-calc(90);
+	padding-left: rem-calc(60); //magic
 	background: url(../img/template/orange-triangle@2x.png) no-repeat;
 	background-size: cover;
 	font-size: rem-calc(23);

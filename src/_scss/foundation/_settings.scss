@@ -96,8 +96,13 @@ $font-weight-normal: 300;
 // $font-weight-bold: bold !default;
 
 // We use these as default colors throughout
-$primary-color: #E84E1B;
-$secondary-color: #36B3E3;
+$primary-color: #3CB5E6;
+$secondary-color: #F8A531;
+$tertiary-color: #EA232E;
+$quaternary-color: #8FC448;
+
+$grey-color: #E8E7E7;
+
 $alert-color: #E34253;
 // $success-color: #43AC6A;
 // $warning-color: #f08a24;
@@ -125,7 +130,7 @@ $alert-color: #E34253;
 
 // We use these to control various global styles
 // $body-bg: $white;
-$body-font-color: #444; ///#777; //#929497;
+$body-font-color: #7C7776; ///#777; //#929497;
 // $body-font-family: $font-family-sans-serif;
 // $body-font-weight: $font-weight-normal;
 // $body-font-style: normal;
@@ -204,9 +209,9 @@ $large: $large-up;
 
 // We use these to control header font styles
 // $header-font-family: $font-family-serif;
-// $header-font-weight: $font-weight-normal;
-// $header-font-style: normal;
-$header-font-color: $primary-color;
+$header-font-weight: bold; //$font-weight-normal;
+$header-font-style: italic; //normal;
+$header-font-color: $body-font-color;
 // $header-line-height: 1.4;
 // $header-top-margin: .2rem;
 // $header-bottom-margin: .5rem;
@@ -215,7 +220,7 @@ $header-font-color: $primary-color;
 // We use these to control header font sizes
 $h1-font-size: rem-calc(25);
 $h2-font-size: rem-calc(25);
-$h3-font-size: rem-calc(30); // because font-face is tiny
+$h3-font-size: rem-calc(15); // because font-face is tiny
 // $h4-font-size: rem-calc(23);
 // $h5-font-size: rem-calc(18);
 // $h6-font-size: 1rem;
@@ -263,7 +268,7 @@ $paragraph-line-height: 1.4; //1.6;
 // We use these to style anchors
 // $anchor-text-decoration: none;
 // $anchor-text-decoration-hover: none;
-$anchor-font-color: $secondary-color;
+$anchor-font-color: $primary-color;
 // $anchor-font-color-hover: scale-color($primary-color, $lightness: -14%);
 
 // We use these to style the <hr> element
@@ -455,8 +460,8 @@ $anchor-font-color: $secondary-color;
 // We use these to control button border and hover styles.
 // $button-border-width: 0px;
 // $button-border-style: solid;
-// $button-bg-color: $primary-color;
-// $button-bg-hover: scale-color($button-bg-color, $lightness: $button-function-factor);
+$button-bg-color: $grey-color;
+$button-bg-hover: darken($grey-color, 10%);//scale-color($button-bg-color, $lightness: $button-function-factor);
 // $button-border-color: $button-bg-hover;
 // $secondary-button-bg-hover: scale-color($secondary-color, $lightness: $button-function-factor);
 // $secondary-button-border-color: $secondary-button-bg-hover;

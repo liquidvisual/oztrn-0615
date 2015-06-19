@@ -76,12 +76,16 @@
 .topbar > ul > li > a,
 .topbar > ul > li > .anchor {
 	display: block;
-	line-height: rem-calc(40); // opinionated
-	padding: rem-calc(0 8); // opinionated
+	// line-height: rem-calc(40); // opinionated
+    line-height: rem-calc(25); // opinionated
+	padding: rem-calc(0 7); // opinionated
 	// text-transform: uppercase;
 
+    // background: #DCDBDB;
+
 	&:hover {
-		background: #DCDBDB;
+		// background: $grey-color;
+        color: $body-font-color;
 	}
 }
 
@@ -93,7 +97,7 @@
     @include transition('background-color');
     display: block;
     text-align: center;
-    // padding: rem-calc(10 15);
+    padding: rem-calc(4 10);
     // color: $body-font-color;
     color: lighten(#7C7776, 30%);
 }
@@ -108,7 +112,8 @@
 //=========================================
 
 .topbar .has-dropdown:hover > a {
-    background: #DCDBDB;
+    background: $grey-color;
+    color: $body-font-color;
 }
 
 /* UX decision, dropdowns are fiddly on tablets */
@@ -132,8 +137,8 @@
     overflow: hidden; // so hit areas aren't triggered
     top: 100%;
     left: auto;
-    width: rem-calc(220);
-    background: #DCDBDB;
+    width: rem-calc(126);
+    background: $grey-color; // grey should be variable
     margin: 0;
     // padding: rem-calc(16);
 }
@@ -157,21 +162,22 @@
 }
 
 .topbar .dropdown a {
-    border-top: 1px solid #CCCCCC;
+    // border-bottom: 1px solid #CCCCCC;
     margin: 0;
     text-align: left;
     transition: none;
     font-size: rem-calc(15);
+    color: $body-font-color;
 }
 
 .topbar .dropdown li:last-child a {
-    // border-bottom: 0;
-    border-bottom: 1px solid #CCCCCC;
+    border-bottom: 0;
+    // border-bottom: 1px solid #CCCCCC;
 }
 
 .topbar .dropdown a:hover {
-    background: #BFBBBB;
-    // color: white;
+    // background: darken(#E8E7E7, 10%);
+    color: black;
 }
 
 //=========================================
