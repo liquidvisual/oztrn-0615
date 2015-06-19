@@ -1,0 +1,113 @@
+/*
+    HEADER.CSS
+
+    - Last updated: 19.06.15
+    - hello@liquidvisual.com
+*/
+//-----------------------------------------------------------------
+// Variables
+//-----------------------------------------------------------------
+
+body {
+	background: #eee;
+}
+//-----------------------------------------------------------------
+// Header
+//-----------------------------------------------------------------
+
+.global-header {
+	@include transition('all');
+	background: white;
+
+	@media #{$medium-up} {
+	    padding-top: rem-calc(50);
+	}
+}
+
+//-----------------------------------------------------------------
+// has-logo State
+//-----------------------------------------------------------------
+
+.global-header .logo {
+	@media #{$medium-up} {
+	    // position: fixed;
+	    // background: rgba(white, 0.8);
+	    // padding: 10px 15px;
+	    // margin-left: -15px;
+	    // border-radius: $global-radius;
+	}
+
+	@media #{$small-only} {
+	    // visibility: hidden; // we still want the height
+	}
+
+	img {
+		@media #{$small-only} {
+			width: 100px;
+		}
+
+		@media #{$medium-up} {
+		    // width: 216px;
+		    width: 133px;
+		}
+	}
+}
+
+//-----------------------------------------------------------------
+// Hamburger Wrapper
+//-----------------------------------------------------------------
+
+.header-mobile-menu {
+	position: absolute;
+	top: 17px; // looks right
+	right: 15px;
+
+	@media #{$small-only} {
+	    background: white;
+	}
+
+	@media #{$medium-up} {
+		position: fixed;
+	    right: 40px;
+	    top: 30px;
+	}
+}
+
+.global-header .hamburger {
+	@include hamburger($width: 25px, $gap: 5px, $thickness: 3px, $color: #222);
+
+	@media #{$medium-up} {
+	    @include hamburger($width: 30px, $gap: 6px, $thickness: 4px, $color: #222);
+	}
+}
+
+//-----------------------------------------------------------------
+// has-logo State (fixed)
+//-----------------------------------------------------------------
+
+// .global-header {
+// 	@media #{$small-only}, #{$medium-only}, #{$large-only} {
+// 	    // position: fixed;
+// 	    // padding: 0; // necessary to override above
+// 	    // background: white; // obscures logos anim
+// 	}
+
+// 	&.has-border {
+// 		@media #{$small-only} {
+// 		    border-bottom: 1px solid #E6E6E6;
+// 		    background: white;
+// 		}
+// 	}
+
+// 	.logo {
+// 		@media #{$small-only} {
+// 		    visibility: visible;
+// 		    display: inline-block !important; // is JS overriding this??
+// 		    padding: rem-calc(10 0);
+// 		}
+// 	}
+// }
+
+//=========================================
+//
+//=========================================

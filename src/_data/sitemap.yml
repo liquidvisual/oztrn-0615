@@ -1,0 +1,43 @@
+- title: Home
+  url: /
+
+- title: About Us
+  url: /about-us/
+  include_children_in_nav: true
+  children:
+    - title: Our Staff
+      url: /about-us/our-staff/
+      include_children_in_nav: false
+      children:
+        - title: Denise Picton
+          url: /about-us/our-staff/staff-item/
+
+    - title : Clients
+      url: /about-us/clients/
+    - title: Reconciliation
+      url: /about-us/reconciliation/
+    - title: Latest News
+      url: /about-us/latest-news/
+      include_children_in_nav: false
+      children:
+        - title: News Item
+          url: /about-us/news/news-item/
+
+- title: "Products & Services"
+  url: /products-and-services/
+  include_children_in_nav: true
+  children:
+    - title: Coaching
+      url: /products-and-services/coaching/
+    - title: Facilitating
+      url: /products-and-services/facilitating/
+    - title: Training
+      url: /products-and-services/training/
+    - title: Consulting
+      url: /products-and-services/consulting/
+
+- title: Contact
+  url: /contact/
+
+- title: Search
+  url: "#search"

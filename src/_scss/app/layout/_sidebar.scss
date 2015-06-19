@@ -1,0 +1,28 @@
+/*
+    SIDEBAR.CSS
+
+    - Last updated: ^^^^^^^^
+    - hello@liquidvisual.com
+*/
+//-----------------------------------------------------------------
+// Variables
+//-----------------------------------------------------------------
+//-----------------------------------------------------------------
+// Sidebar
+//-----------------------------------------------------------------
+
+.sidebar-vertical-strip {
+	position: fixed;
+	top: 0;
+	right: 0;
+	width: rem-calc(96);
+	height: 100vh;
+	background: pink;
+	background-image: url(../img/template/home-strip@2x.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+//=========================================
+//
+//=========================================

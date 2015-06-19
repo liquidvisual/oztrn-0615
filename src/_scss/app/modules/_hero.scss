@@ -1,0 +1,135 @@
+/*
+    HERO.CSS
+
+    - Last updated: 08.06.15
+    - hello@liquidvisual.com
+*/
+//-----------------------------------------------------------------
+// Variables
+//-----------------------------------------------------------------
+//-----------------------------------------------------------------
+// Hero
+//-----------------------------------------------------------------
+
+.hero {
+	display: table;
+	position: relative;
+	width: 100%;
+	background-repeat: no-repeat;
+	background-size: contain;
+	padding-top: rem-calc(20);
+
+	// border-bottom: 1px solid grey; testing purposes
+
+	@media #{$large-up} {
+		height: 100vh;
+		background-position: 90% bottom;
+	}
+
+	@media #{$xlarge-up} {
+		background-position: 65% bottom;
+	}
+
+	@media #{$xxlarge-up} {
+	    background-position: 66% bottom;
+	}
+
+	// Tablet Portrait
+	@media #{$large-up} and (max-height: 768px) {
+		background-size: calc(1046px / 2); // image halved: 1046 is hero image width
+		// background-position: 65% bottom;
+		// padding-top: rem-calc(130); // ipad
+	}
+}
+
+.developer .hero {
+	background-color: rgba(#eee, 0.6);
+	border-top: 1px solid #ddd;
+}
+
+//-----------------------------------------------------------------
+// Hero Body - Applies to all (Leader will override)
+//-----------------------------------------------------------------
+
+.hero-body {
+	display: table-cell;
+	vertical-align: middle;
+
+	@media #{$xlarge-up} {
+	    padding-top: 5%; // Slightly off vertical center
+	}
+
+	.hero-body-text {
+		// display: inline-block;
+		border-radius: $global-radius;
+
+		// Create BG on text - prevent image clash
+		@media #{$large-only}, #{$xlarge-only} {
+		    padding: rem-calc(0 15 5 0);
+		    background: rgba(white, 0.8);
+		}
+
+		// Squeeze text width on desktop (grid too small)
+		@media #{$xlarge-up} {
+			margin-right: rem-calc(100);
+		}
+	}
+}
+
+//-----------------------------------------------------------------
+// Hero Leader (home and contact)
+//-----------------------------------------------------------------
+
+.hero-leader {
+	height: 100vh;
+
+	// Center on SMALL and PORTRAIT only
+	@media #{$small-only}, #{$medium-only} {
+	    background-position: center;
+	}
+
+	.hero-body {
+		@media #{$small-only}, #{$medium-only} {
+		    vertical-align: top; // Reset vertical center
+		    padding-top: rem-calc(60);
+		}
+
+		@media #{$medium-only} {
+		    padding-top: rem-calc(200);
+		}
+
+		@media #{$xlarge-up} {
+		    padding-top: 0; // reset
+			padding-bottom: rem-calc(252);
+		}
+	}
+
+	// don't need it, since it's one tagline
+	.hero-body-text {
+		background: none;
+	}
+}
+
+//-----------------------------------------------------------------
+// Trailing Image (Portrait and mobile)
+//-----------------------------------------------------------------
+
+.trailing-hero-image {
+	width: 100%;
+	height: 90vh;
+	background: url(../img/template/hero-1.jpg) no-repeat right bottom;
+	background-size: contain;
+	margin-top: -110px;
+
+	&.special {
+		margin-top: -50px;
+	}
+
+	@media #{$medium-up} {
+	    margin-top: -220px;
+	}
+}
+
+//-----------------------------------------------------------------
+//
+//-----------------------------------------------------------------

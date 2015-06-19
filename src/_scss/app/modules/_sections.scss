@@ -1,0 +1,148 @@
+/*
+    SECTIONS.CSS
+
+    - Last updated: ^^^^^^^^
+    - hello@liquidvisual.com
+*/
+//-----------------------------------------------------------------
+// Variables
+//-----------------------------------------------------------------
+//-----------------------------------------------------------------
+// Sections
+//-----------------------------------------------------------------
+
+// .section {
+// 	padding: rem-calc(30 0);
+// }
+
+// .color-section {
+//     background: #EBEBEB;
+// }
+
+// .image-section {
+// 	height: 80vh;
+//     background-repeat: no-repeat;
+//     background-position: center center;
+//     background-image: url(/img/content/newly-weds-bg.jpg);
+//     -webkit-background-size: cover;
+//        -moz-background-size: cover;
+//          -o-background-size: cover;
+//             background-size: cover;
+
+//     @media #{$large-up} {
+//         height: 100vh;
+//         background-attachment: fixed; // issues on devices
+//     }
+// }
+
+//-----------------------------------------------------------------
+// Sections
+//-----------------------------------------------------------------
+
+.home-section {
+    background-image: url(../img/template/hero-home.jpg);
+}
+
+.about-us-section {
+    background-image: url(../img/template/hero-about-us.jpg);
+}
+
+.what-we-do-section {
+    background-image: url(../img/template/hero-what-we-do.jpg);
+}
+
+.who-are-you-section {
+    background-image: url(../img/template/hero-who-are-you.jpg);
+}
+
+.contact-us-section {
+    background-image: url(../img/template/hero-contact-us.jpg);
+    // background-position: 80% top;
+}
+
+//=========================================
+// All non-leader heros should have stacked
+// images instead. (We use the same class for brevity)
+//=========================================
+
+.hero.about-us-section,
+.hero.what-we-do-section,
+.hero.who-are-you-section,
+.hero.contact-us-section {
+    @media #{$small-only}, #{$medium-only} {
+        background-image: none;
+    }
+}
+
+//-----------------------------------------------------------------
+// BG Section
+//-----------------------------------------------------------------
+
+.bg-section {
+    padding: rem-calc(60 0);
+    background: url(../img/template/bio-bg.svg) no-repeat;
+    background-size: contain;
+
+    &.bg-section-slim {
+        @media #{$small-only} {
+            padding: rem-calc(20 0);
+        }
+    }
+
+    @media #{$xlarge-up} {
+        padding: rem-calc(216) 0;
+    }
+}
+
+//-----------------------------------------------------------------
+// Bio Section
+//-----------------------------------------------------------------
+
+.bio-section {
+    .bio-body-text {
+        @media #{$large-up} {
+            padding-top: rem-calc(80);
+        }
+        @media #{$xlarge-up} {
+            padding-right: 30%;
+        }
+    }
+
+    // img {
+    //     @media #{$xxlarge-up} {
+    //         padding: rem-calc(0 150 0 100);
+    //     }
+    // }
+}
+
+//-----------------------------------------------------------------
+// Contact Us Section
+//-----------------------------------------------------------------
+
+.contact-us-section {
+    h1 {
+        margin-bottom: rem-calc(60);
+
+        @media #{$xlarge-up} {
+            margin-bottom: 30%; //rem-calc(214);
+        }
+    }
+
+    .hero-body-text {
+        // padding-right: 0;
+
+        @media #{$small-only}, #{$medium-only} {
+            margin-bottom: rem-calc(80); // stop bunching
+        }
+    }
+
+    &.hero {
+        @media #{$large-up} {
+            background-position: 90% top;
+        }
+    }
+}
+
+//=========================================
+//
+//=========================================

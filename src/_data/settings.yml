@@ -1,0 +1,24 @@
+# GLOBAL SITE SETTINGS
+
+# General
+seo_title: ""
+title: "OzTrain"
+company: "oztrain pty ltd"
+description: "..."
+
+# Contact Info
+email: oztrain@oztrain.com.au
+phone: +61 8 8100 2800
+fax: (05) 555 555
+address: "Suite 903, The Aurora Building<br> 147 Pirie Street Adelaide<br> South Australia 5000"
+
+# Social Networks
+facebook: "https://www.facebook.com/pages/OzTrain/163303870405182"
+twitter: "https://twitter.com/oztrainau"
+linked_in: "https://www.linkedin.com/company/oz-train"
+
+# Google Map
+google_map: ""
+
+# Google Analytics
+google_analytics: "UA-XXXXXXXX-X"

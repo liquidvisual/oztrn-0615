@@ -1,0 +1,56 @@
+{% assign settings = site.data.settings %}
+
+<!-- Trailing Hero Image -->
+<section class="trailing-hero-image special contact-us-section hide-for-large-up"></section>
+
+<section id="contact-us" class="hero contact-us-section">
+
+	<article class="hero-body">
+		<div class="row outer-row">
+			<div class="large-5 columns">
+				<div class="hero-body-text">
+					<h1>the law, simply</h1>
+
+					<img width="24" src="/img/template/marker@2x.png">
+					<p>
+						<a class="special-link" href="{{ settings.google_map }}">view map <i class="fa fa-angle-right"></i></a><br>
+						{{ settings.address }}<br>
+						p <a href="tel: {{ settings.phone_1 }}">{{ settings.phone_1 }}</a><br>
+						p <a href="tel: {{ settings.phone_2 }}">{{ settings.phone_2 }}</a><br>
+						skype {{ settings.skype }}
+					</p>
+				</div>
+			</div>
+		</div>
+	</article>
+
+	<!-- FOOTER -->
+	<footer class="footer">
+
+		<!-- Footer Text -->
+		<div class="footer-text">
+			<div class="row outer-row">
+				<div class="columns">
+					<p class="footer-links">
+						<a href="#">Copyright and Disclaimer</a> &nbsp;|&nbsp; <br class="show-for-small-only"><a href="#">Legal Costs Fact Sheets</a>
+					</p>
+				</div>
+			</div>
+		</div>
+
+		<!-- Social Networks -->
+		<div class="social-networks">
+			<div class="row outer-row">
+				<div class="columns">
+					<ul class="lv-inline-list close-gaps text-center medium-text-right">
+						<li><a href="{{ settings.facebook }}"><img width="24" src="/img/template/facebook-icon@2x.png"></a></li>
+						<li><a href="{{ settings.email }}"><img width="24" src="/img/template/linked-in-icon@2x.png"></a></li>
+						<li><a href="{{ settings.facebook }}"><img width="24" src="/img/template/email-icon@2x.png"></a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+
+	</footer>
+
+</section> <!-- .hero -->
