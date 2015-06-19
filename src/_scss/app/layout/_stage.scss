@@ -12,18 +12,59 @@
 //-----------------------------------------------------------------
 
 .stage {
-	overflow: hidden;
+	// overflow: hidden;
 	// margin-right: 35%;
 	background: url(../img/template/right-now-coaching-bg.png) no-repeat;
 	background-size: contain;
-
 	background-position: top left;
-	// width: calc(100% - 340px);
 	height: 100vh;
-
 	margin-right: rem-calc(340);
 }
+
+//-----------------------------------------------------------------
+// Main
+//-----------------------------------------------------------------
+
+.main {
+	position: relative;
+	max-width: rem-calc(860);
+	margin-right: rem-calc(20);
+
+	.logo {
+		position: absolute;
+		width: 100%;
+
+		img {
+			position: absolute;
+			right: 0;
+			bottom: 10px;
+		}
+	}
+
+	.header {
+		background: #8B8584;
+		color: white;
+		padding: rem-calc(2 2 2 70);
+		font-size: rem-calc(14);
+	}
+
+	.main-body {
+		max-width: rem-calc(530);
+		background: rgba(white, 0.9);
+		padding: rem-calc(40 20 20 20);
+		float: right;
+		height: 100vh;
+	}
+}
+
+//-----------------------------------------------------------------
+// 530
+//-----------------------------------------------------------------
 
 //=========================================
 //
 //=========================================
+
+body {
+	// background: #eee;
+}
