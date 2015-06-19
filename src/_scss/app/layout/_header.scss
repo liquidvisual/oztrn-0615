@@ -9,7 +9,7 @@
 //-----------------------------------------------------------------
 
 body {
-	// background: #eee;
+	background: #eee;
 }
 //-----------------------------------------------------------------
 // Header
@@ -18,8 +18,13 @@ body {
 .global-header {
 	@include transition('all');
 	background: white;
+	padding-top: rem-calc(20);
 
 	@media #{$medium-up} {
+	    margin-bottom: rem-calc(170);
+	}
+
+	@media #{$large-up} {
 	    padding-top: rem-calc(50);
 	}
 }
@@ -43,12 +48,15 @@ body {
 
 	img {
 		@media #{$small-only} {
-			width: 100px;
+			width: 80px;
+			padding: rem-calc(5 5 5 15);
+			// border: 5px solid white;
 		}
 
 		@media #{$medium-up} {
 		    // width: 216px;
 		    width: 133px;
+		    padding: 0;
 		}
 	}
 }

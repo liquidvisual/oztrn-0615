@@ -1,0 +1,29 @@
+/*
+    STAGE.CSS
+
+    - Last updated: 19.06.15
+    - hello@liquidvisual.com
+*/
+//-----------------------------------------------------------------
+// Variables
+//-----------------------------------------------------------------
+//-----------------------------------------------------------------
+// Stage
+//-----------------------------------------------------------------
+
+.stage {
+	overflow: hidden;
+	// margin-right: 35%;
+	background: url(../img/template/right-now-coaching-bg.png) no-repeat;
+	background-size: contain;
+
+	background-position: top left;
+	// width: calc(100% - 340px);
+	height: 100vh;
+
+	margin-right: rem-calc(340);
+}
+
+//=========================================
+//
+//=========================================

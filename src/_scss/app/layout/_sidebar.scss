@@ -14,8 +14,12 @@
 .sidebar {
 	position: absolute;
 	top: 140px; // should be header height
-	right: 96px - 1; // account for image oddity
+	right: 0;
 	width: rem-calc(246);
+
+	@media #{$large-up} {
+	    right: 96px - 1; // account for image oddity
+	}
 }
 
 //=========================================
@@ -25,7 +29,7 @@
 .sidebar-content {
 	position: relative;
 	height: rem-calc(750);
-	margin-bottom: rem-calc(50);
+	margin-bottom: rem-calc(40);
 	padding: rem-calc(170 0 38 0);
 	background: url(../img/template/grey-triangle@2x.png);
 	background-size: contain;
@@ -70,7 +74,7 @@
 
 .sidebar-vertical-strip-logo {
 	position: absolute;
-	top: 100px;
+	top: rem-calc(110);
 	width: 100%;
 	height: rem-calc(398);
 	background: url(../img/template/right-now-logo-vertical@2x.png) no-repeat;

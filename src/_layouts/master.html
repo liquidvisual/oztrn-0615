@@ -39,20 +39,20 @@
     <!-- <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script> -->
 </head>
 <body>
-    <div class="lv-super dev-mode-enabled">
+    <div class="lv-super dev-mode-enabledX">
         <div class="lv-page">
 
             <!-- HEADER -->
             <header class="global-header js-global-header FixedX">
                 {% include header.html %}
-            </header>
 
-            <!-- NAVIGATION -->
-            <nav class="global-navigation">
-                <div class="topbar">
-                    {% include navigation.html %}
-                </div>
-            </nav>
+                <!-- NAVIGATION -->
+                <nav class="global-navigation show-for-xlarge-up">
+                    <div class="topbar">
+                        {% include navigation.html %}
+                    </div>
+                </nav>
+            </header>
 
             {{ content }}
 
