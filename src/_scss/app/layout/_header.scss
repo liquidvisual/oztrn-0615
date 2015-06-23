@@ -89,10 +89,14 @@
 	}
 
 	@media #{$medium-up} {
-		// position: fixed;
 		position: absolute;
-	    right: 40px;
+	    right: 20px;
 	    top: 30px;
+	}
+
+	@media #{$large-only} {
+		position: fixed;
+	    right: 50px;
 	}
 }
 

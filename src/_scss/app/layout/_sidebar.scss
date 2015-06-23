@@ -15,9 +15,13 @@ $sidebar-vertical-strip-width: rem-calc(96);
 //-----------------------------------------------------------------
 
 .sidebar {
-	padding: rem-calc(15 0 0 0);
-	margin: rem-calc(0 15);
-	border-top: 1px solid #eee;
+	// padding: rem-calc(15 0 0 0);
+	// margin: rem-calc(0 $sidebar-vertical-strip-width 0 15);
+	padding: rem-calc(15);
+
+	@media #{$large-only} {
+	    padding-right: $sidebar-vertical-strip-width + rem-calc(30);
+	}
 
 	@media #{$xlarge-up} {
 	    position: absolute;
@@ -25,7 +29,6 @@ $sidebar-vertical-strip-width: rem-calc(96);
 	    top: 140px; // should be header height
 	    margin: 0;
 	    padding: 0; // important
-	    border: 0;
 	    width: rem-calc(246);
 	}
 }
@@ -36,16 +39,25 @@ $sidebar-vertical-strip-width: rem-calc(96);
 
 .sidebar-content {
 	position: relative;
-	height: rem-calc(750);
+	padding: rem-calc(20);
 	margin-bottom: rem-calc(40);
-	padding: rem-calc(170 0 38 0);
-	background: url(../img/template/grey-triangle@2x.png);
+	background: $grey-color;
 	background-size: contain;
 
+	@media #{$xlarge-up} {
+		padding: rem-calc(170 0 38 0);
+		height: rem-calc(750);
+		background: url(../img/template/grey-triangle@2x.png);
+		background-size: contain;
+	}
+
 	.sidebar-content-scroller {
-		padding: rem-calc(0 38);
 		overflow-y: auto;
-		height: rem-calc(430);
+
+		@media #{$xlarge-up} {
+		    padding: rem-calc(0 38);
+		    height: rem-calc(430);
+		}
 	}
 }
 
@@ -70,20 +82,28 @@ $sidebar-vertical-strip-width: rem-calc(96);
 	position: fixed;
 	top: 0;
 	right: 0;
-	width: $sidebar-vertical-strip-width;
-	height: 100vh;
-	background-image: url(../img/template/home-strip@2x.png);
+	bottom: 0;
+	width: $sidebar-vertical-strip-width/3;
+	overflow: hidden;
+	background-image: url(../img/template/home-strip@2x.jpg);
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: bottom;
+
+	@media #{$xlarge-up} {
+	    width: $sidebar-vertical-strip-width;
+	}
 }
 
 .sidebar-vertical-strip-logo {
 	position: absolute;
-	top: rem-calc(110);
+	top: rem-calc(30);
 	width: 100%;
 	height: rem-calc(398);
 	background: url(../img/template/right-now-logo-vertical@2x.png) no-repeat;
 	background-size: contain;
 
+	@media #{$xlarge-up} {
+	    top: rem-calc(110);
+	}
 }

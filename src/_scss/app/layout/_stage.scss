@@ -12,17 +12,23 @@
 //-----------------------------------------------------------------
 
 .stage {
-	background: url(../img/template/right-now-coaching-bg.png) no-repeat;
+	// background: url(../img/template/right-now-coaching-bg.png) no-repeat;
+	background: url(../img/template/facilitating-bg.svg) no-repeat;
 	background-size: contain;
-	background-position: top left;
+	background-position: -1px bottom; // 1px bleed
+
+	// POSSIBILITY - trailing images on mobile
+	@media #{$small-only} {
+		padding-bottom: 70%;
+	}
 
 	@media #{$large-up} {
-	    margin-right: rem-calc(96);
+	    margin-right: rem-calc(96 + 10); // variables
 	}
 
 	@media #{$xlarge-up} {
 		height: 100vh;
-	    margin-right: rem-calc(340);
+	    margin-right: rem-calc(340 + 30); // 30 is padding
 	}
 }
 
@@ -31,8 +37,9 @@
 //-----------------------------------------------------------------
 
 .main {
+	@include clearfix();
 	position: relative;
-	max-width: rem-calc(860);
+	max-width: rem-calc(900);
 
 	@media #{$medium-up} {
 	    margin-right: rem-calc(20);
@@ -68,7 +75,7 @@
 	}
 
 	//=========================================
-	// Header
+	// Header Strip
 	//=========================================
 
 	.header {
@@ -78,26 +85,92 @@
 		font-size: rem-calc(14);
 
 		@media #{$large-up} {
-		    padding: rem-calc(2 2 2 70);
+		    padding: rem-calc(2 2 2 70); // 70 variable
 		}
 	}
 
 	//=========================================
-	// Main Body
+	// Main Body (Hugs right)
 	//=========================================
 
 	.main-body {
+		padding: rem-calc(20);
 		background: rgba(white, 0.9);
-		padding: rem-calc(40 20 20 20);
-
-		@media #{$large-up} {
-			float: right;
-		    max-width: rem-calc(530);
-		}
 
 		@media #{$xlarge-up} {
-			min-height: 100vh;
+			min-height: calc(100vh - 25px);
 		}
+	}
+
+	//=========================================
+	// Main Side Panel
+	//=========================================
+
+	.main-side-panel {
+		// padding: rem-calc(20);
+	}
+
+}
+
+//-----------------------------------------------------------------
+// Main Columns
+//-----------------------------------------------------------------
+
+.main-columns {
+	@include clearfix();
+
+	@media #{$xlarge-up} {
+	    padding-left: rem-calc(70);
+	}
+
+	.main-col-1,
+	.main-col-2 {
+		width: 100%;
+
+		@media #{$medium-up} {
+		    padding-top: rem-calc(40);
+		}
+	}
+
+	// Sidebar
+	.main-col-1 {
+		@media #{$medium-up} {
+		    width: 64%;
+		    float: right;
+		}
+	}
+
+	// Main
+	.main-col-2 {
+		@media #{$medium-up} {
+		    width: 36%;
+		}
+	}
+}
+
+//-----------------------------------------------------------------
+// Sidebar Box
+//-----------------------------------------------------------------
+
+.sidebar-box {
+	background: $grey-color;
+	margin-bottom: rem-calc(40);
+	padding: rem-calc(20 20 30 20);
+	margin: rem-calc(15);
+
+	@media #{$medium-up} {
+	    margin: rem-calc(0 60 0 0);
+	}
+
+	ul {
+		list-style: none;
+		margin: 0;
+		text-transform: lowercase;
+		font-style: italic;
+	}
+
+	a {
+		color: darken($grey-color, 40%);
 	}
 }
 

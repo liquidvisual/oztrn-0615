@@ -52,19 +52,19 @@ $('.header-mobile-menu').bind('click', function(e) {
 // http://blog.rodneyrehm.de/archives/34-iOS7-Mobile-Safari-And-Viewport-Units.html
 //-----------------------------------------------------------------
 
-var IS_MOBILE_SAFARI = navigator.userAgent.match(/(iPod|iPhone|iPad)/) && navigator.userAgent.match(/AppleWebKit/);
+// var IS_MOBILE_SAFARI = navigator.userAgent.match(/(iPod|iPhone|iPad)/) && navigator.userAgent.match(/AppleWebKit/);
 
-if (IS_MOBILE_SAFARI) {
-    var $element = $('.hero-leader');
+// if (IS_MOBILE_SAFARI) {
+//     var $element = $('.sidebar-vertical-stripX');
 
-    function fixMobileSafariViewport() {
-        $element.css('height', window.innerHeight);
-    }
+//     function fixMobileSafariViewport() {
+//         $element.css('height', window.innerHeight);
+//     }
 
-    // listen to portrait/landscape changes
-    window.addEventListener('orientationchange', fixMobileSafariViewport, true);
-    fixMobileSafariViewport();
-}
+//     // listen to portrait/landscape changes
+//     window.addEventListener('orientationchange', fixMobileSafariViewport, true);
+//     fixMobileSafariViewport();
+// }
 
 //-----------------------------------------------------------------
 //
