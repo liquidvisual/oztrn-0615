@@ -5,8 +5,22 @@ layout: master
 {% assign settings = site.data.settings %}
 
 <!-- STAGE -->
-<section class="stage has-trailing-bg">
-	{{ content }}
+<section class="stage">
+	<main class="main">
+
+		<div class="main-columns">
+			<div class="main-col-1 main-body">
+				<img class="logo-bg" src="/img/template/logo-symbol.svg" alt="oztrain logo">
+			</div>
+
+			<!-- Main Side Panel -->
+			<div class="main-col-2 main-side-panel">
+
+				{{ content }}
+
+			</div> <!-- main-side-panel -->
+		</div> <!-- .main-columns -->
+	</main>
 </section>
 
 <!-- SIDEBAR -->
@@ -15,12 +29,17 @@ layout: master
 		<div class="sidebar-content-scroller">
 
 			{% if page.sidebar_content %}
-			    {% include {{ page.sidebar_content }} exclude_top_level=true %}
+			    {% include {{ page.sidebar_content }} %}
 			{% else %}
 				{% include sidebar/sidebar_default.html %}
 			{% endif %}
 
 		</div> <!-- .sidebar-content-scroller -->
+
+		<!-- News Button on Homepage only -->
+		{% if page.url == "/" %}
+		    <a class="news-button show-for-xlarge-up">news ></a>
+		{% endif %}
 
 	</div> <!-- .sidebar-content -->
 
@@ -30,9 +49,6 @@ layout: master
 
 	<!-- Sidebar Vertical Strip -->
 	<div class="sidebar-vertical-strip show-for-large-up">
-
-		<!-- Optional -->
-		<div class="sidebar-vertical-strip-logo"></div>
 
 		<ul class="social-networks">
 			<li><a href="{{ settings.facebook }}" target="_blank"><img width="18" src="/img/template/facebook-icon@2x.png"></a></li>

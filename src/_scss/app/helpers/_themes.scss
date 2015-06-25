@@ -243,19 +243,32 @@ $yellow-theme-color: #F9AF48;
 .fire-theme {
 	.stage {
 		background-image: url(../img/template/contact-us-bg.jpg);
+
+		@media #{$large-up} {
+		    margin-right: 50px;
+		}
+
+		@media #{$xlarge-up} {
+		    margin-right: rem-calc(446 + 30); // 30 is padding
+		}
 	}
 
-	.main .main-body {
-		// background: aqua;
-		// min-height: 0;
+	.main-body {
+		background: none;
 	}
 
 	.sidebar {
-		width: rem-calc(350);
+		@media #{$xlarge-up} {
+		    width: rem-calc(350);
+		}
 	}
 
 	.sidebar-content {
-		background: none;
+		background: none;  // no need
+	}
+
+	.sidebar-footer {
+		display: none;
 	}
 
 	.sidebar-content-scroller {

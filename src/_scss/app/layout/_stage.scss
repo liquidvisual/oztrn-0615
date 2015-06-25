@@ -1,25 +1,29 @@
 /*
     STAGE.CSS
 
-    - Last updated: 19.06.15
+    - Last updated: 26.06.15
     - hello@liquidvisual.com
 */
 //-----------------------------------------------------------------
 // Variables
 //-----------------------------------------------------------------
+
+$general-header-height: 320px; // remove?
+
 //-----------------------------------------------------------------
 // Stage
 //-----------------------------------------------------------------
 
 .stage {
-	// background: url(../img/template/facilitating-bg.svg) no-repeat;
 	background-repeat: no-repeat;
 	background-size: contain;
 	background-position: -1px bottom; // 1px bleed
 
 	// POSSIBILITY - trailing images on mobile
-	@media #{$small-only} {
-		padding-bottom: 70%;
+	&.has-trailing-bg {
+		@media #{$small-only} {
+			padding-bottom: 70%;
+		}
 	}
 
 	@media #{$large-up} {
@@ -27,7 +31,6 @@
 	}
 
 	@media #{$xlarge-up} {
-		height: 100vh;
 	    margin-right: rem-calc(340 + 30); // 30 is padding
 	}
 }
@@ -50,7 +53,7 @@
 	//=========================================
 
 	.logo {
-		// shows only when the bronze-theme is applied
+		// shows only when the 'bronze-theme' is applied
 		display: none;
 		text-align: right;
 
@@ -102,7 +105,12 @@
 		background: rgba(white, 0.9);
 
 		@media #{$xlarge-up} {
-			min-height: calc(100vh - 25px);
+			min-height: 850px; // needs to be higher than sidebar contents - make var?
+		}
+
+		// Rare edge case for tall monitors
+		@media #{$xlarge-up} and (min-height: 1170px) {
+			min-height: calc(100vh - 320px);
 		}
 	}
 
@@ -116,7 +124,7 @@
 		@media #{$xxlarge-up} {
 		    position: absolute;
 		    top: -40px;
-		    right: 0;
+		    right: -30px;
 		}
 	}
 }
@@ -127,6 +135,7 @@
 
 .main-columns {
 	@include clearfix();
+	// height: 100%;
 
 	@media #{$xxlarge-up} {
 	    padding-left: rem-calc(70);
@@ -141,7 +150,7 @@
 		}
 	}
 
-	// Sidebar
+	// Main Body
 	.main-col-1 {
 		@media #{$medium-up} {
 		    width: 64%;
@@ -149,10 +158,16 @@
 		}
 	}
 
-	// Main
+	// Main Side Panel
 	.main-col-2 {
+		padding-left: rem-calc(15);
+
 		@media #{$medium-up} {
 		    width: 36%;
+		    padding-left: rem-calc(20);
+		}
+		@media #{$xxlarge-up} {
+		    padding-left: 0;
 		}
 	}
 }
@@ -198,7 +213,3 @@
 //-----------------------------------------------------------------
 //
 //-----------------------------------------------------------------
-
-body {
-	// background: #eee;
-}
