@@ -24,10 +24,36 @@ html, body {
 }
 
 .lv-page {
+	@include transition('top 0.4s, bottom 0.4s');
+	position: relative;
+
 	@media #{$small-only} {
 	    padding-top: rem-calc(65);
 	}
 }
+
+//-----------------------------------------------------------------
+// Developer
+//-----------------------------------------------------------------
+
+.developer {
+	.lv-page {
+		background: #eee;
+	}
+	.main-columns {
+		background: orange;
+	}
+	.main-col-1 {
+		background: #AE90C0;
+	}
+	.main-col-2 {
+		background: #D288AC;
+	}
+}
+
+//-----------------------------------------------------------------
+//
+//-----------------------------------------------------------------
 
 //=========================================
 // Snap Grid

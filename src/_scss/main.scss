@@ -32,9 +32,9 @@
 //=========================================
 
 @import "app/base/variables";
+@import "app/base/mixins";
 @import "app/base/fonts";
 @import "app/base/global";
-@import "app/base/mixins";
 
 //=========================================
 // Layout
@@ -63,12 +63,15 @@
 // Modules
 //=========================================
 
+@import "app/modules/accordion";
 // @import "app/modules/animation";
 @import "app/modules/gallery";
 @import "app/modules/hero";
+@import "app/modules/media-article";
 @import "app/modules/modules";
 @import "app/modules/search";
 @import "app/modules/sections";
+@import "app/modules/side-nav";
 @import "app/modules/tabs";
 
 //=========================================

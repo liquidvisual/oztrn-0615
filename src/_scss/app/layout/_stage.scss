@@ -12,8 +12,8 @@
 //-----------------------------------------------------------------
 
 .stage {
-	// background: url(../img/template/right-now-coaching-bg.png) no-repeat;
-	background: url(../img/template/facilitating-bg.svg) no-repeat;
+	// background: url(../img/template/facilitating-bg.svg) no-repeat;
+	background-repeat: no-repeat;
 	background-size: contain;
 	background-position: -1px bottom; // 1px bleed
 
@@ -46,10 +46,12 @@
 	}
 
 	//=========================================
-	// Logo
+	// Logo (Above header strip)
 	//=========================================
 
 	.logo {
+		// shows only when the bronze-theme is applied
+		display: none;
 		text-align: right;
 
 		@media #{$large-up} {
@@ -81,11 +83,13 @@
 	.header {
 		background: #8B8584;
 		color: white;
-		padding: rem-calc(0 15);
+		padding: rem-calc(2 20);
 		font-size: rem-calc(14);
+		font-style: italic;
+		text-transform: lowercase;
 
-		@media #{$large-up} {
-		    padding: rem-calc(2 2 2 70); // 70 variable
+		@media #{$xxlarge-up} {
+		    padding-left: rem-calc(70); // 70 variable
 		}
 	}
 
@@ -103,13 +107,18 @@
 	}
 
 	//=========================================
-	// Main Side Panel
+	// Logo BG - used on homepage templates
 	//=========================================
 
-	.main-side-panel {
-		// padding: rem-calc(20);
-	}
+	.logo-bg {
+		width: 637px; //2248px;
 
+		@media #{$xxlarge-up} {
+		    position: absolute;
+		    top: -40px;
+		    right: 0;
+		}
+	}
 }
 
 //-----------------------------------------------------------------
@@ -119,7 +128,7 @@
 .main-columns {
 	@include clearfix();
 
-	@media #{$xlarge-up} {
+	@media #{$xxlarge-up} {
 	    padding-left: rem-calc(70);
 	}
 
@@ -159,7 +168,14 @@
 	margin: rem-calc(15);
 
 	@media #{$medium-up} {
-	    margin: rem-calc(0 60 0 0);
+	    margin: rem-calc(0 60 40 0);
+	}
+
+	h1, h2, h3, h4, h5, h6 {
+		font-size: $paragraph-font-size;
+		font-weight: normal;
+		margin-bottom: rem-calc(20);
+		color: $body-font-color !important; // fix later
 	}
 
 	ul {
@@ -170,7 +186,12 @@
 	}
 
 	a {
+		@include transition('color');
 		color: darken($grey-color, 40%);
+
+		&:hover {
+		    color: black !important;
+		}
 	}
 }
 

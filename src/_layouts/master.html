@@ -34,13 +34,11 @@
 
     <!-- Priority Scripts -->
     <script src="//cdnjs.cloudflare.com/ajax/libs/modernizr/2.7.1/modernizr.min.js"></script>
-    <script src="http://fast.fonts.net/jsapi/38fa8f29-26d1-4868-8783-2dadce2533ee.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/masonry/3.3.0/masonry.pkgd.min.js"></script>
     <!-- <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script> -->
 </head>
 <body>
     <div class="lv-super dev-mode-enabled">
-        <div class="lv-page">
+        <div class="lv-page {{ page.theme }}">
 
             <!-- HEADER -->
             <header class="global-header js-global-header FixedX">
@@ -55,6 +53,15 @@
             </header>
 
             {{ content }}
+
+            <!-- SEARCH -->
+            <form class="global-search show-for-xlarge-up">
+                <div class="field-wrapper">
+                    <input type="text" placeholder="search">
+                    <button type="submit" class="button"><i class="fa fa-angle-right"></i></button>
+                    <a class="close-btn button" href="#">&times;</a>
+                </div>
+            </form>
 
         </div> <!-- .lv-page -->
     </div> <!-- .lv-super -->
@@ -79,11 +86,13 @@
     <script src="/_bower_components/jQuery.mmenu/dist/js/jquery.mmenu.min.all.js"></script>
     <script src="/_bower_components/fastclick/lib/fastclick.js"></script>
     <script src="/_bower_components/foundation/js/foundation/foundation.js"></script>
+    <script src="/_bower_components/foundation/js/foundation/foundation.accordion.js"></script>
     <script src="/_bower_components/nprogress/nprogress.js"></script>
     <script src="/_bower_components/jquery.transit/jquery.transit.js"></script>
     <script src="/scripts/main.js"></script>
     <script src="/scripts/animation.js"></script>
     <script src="/scripts/responsive-helper.js"></script>
+    <script src="/scripts/search-dropdown.js"></script>
     <script src="/scripts/scrolling.js"></script>
     <script src="/scripts/scrollspy.js"></script>
     <!-- endbuild -->

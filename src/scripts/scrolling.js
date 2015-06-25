@@ -13,10 +13,10 @@ var menuItems = $('.topbar, .off-canvas-menu').find('a');
 // Click Logo: Jump to Top
 //-----------------------------------------------------------------
 
-$('.global-header .logo').click(function(e){
-	e.preventDefault();
-	$('html, body').stop().animate({ scrollTop: 0 }, 500);
-});
+// $('.global-header .logo').click(function(e){
+// 	e.preventDefault();
+// 	$('html, body').stop().animate({ scrollTop: 0 }, 500);
+// });
 
 //-----------------------------------------------------------------
 // Scrolling Logic
@@ -37,16 +37,16 @@ $(window).scroll(function(){
 // Click to Scroll Animation
 //-----------------------------------------------------------------
 
-menuItems.click(function(e){
-	var href = $(this).attr("href"),
-	offsetTop = href === "#" ? 0 : $(href).offset().top-topMenuHeight+1;
+// menuItems.click(function(e){
+// 	var href = $(this).attr("href"),
+// 	offsetTop = href === "#" ? 0 : $(href).offset().top-topMenuHeight+1;
 
-	e.preventDefault();
+// 	e.preventDefault();
 
-	$('html, body').stop().animate({
-		scrollTop: offsetTop
-		}, 300);
-});
+// 	$('html, body').stop().animate({
+// 		scrollTop: offsetTop
+// 		}, 300);
+// });
 
 //==================================================
 //

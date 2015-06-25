@@ -159,14 +159,15 @@ $global-radius: 5px;
 $small-range: (0em, 40em);              // 640
 $medium-range: (40.063em, 48em);        // 641-768
 $large-range: (48.063em, 64em);         // 769-1024
-$xlarge-range: (64.063em, 90em);        // 1025-1440
-$xxlarge-range: (90.063em, 116.250em);  // 1441-1860
+$xlarge-range: (64.063em, 80em);        // 1025-1280
+$xxlarge-range: (80.063em, 116.250em);  // 1281-1860
 
+// ORIGINALS
 // $small-range: (0em, 40em);              // 640
-// $medium-range: (40.063em, 64em);        // 641-1024
-// $large-range: (64.063em, 80em);         // 1025-1280
-// $xlarge-range: (80.063em, 90em);        // 1281-1440
-// $xxlarge-range: (90.063em, 116.250em);  // 1440-1860
+// $medium-range: (40.063em, 48em);        // 641-768
+// $large-range: (48.063em, 64em);         // 769-1024
+// $xlarge-range: (64.063em, 90em);        // 1025-1440
+// $xxlarge-range: (90.063em, 116.250em);  // 1441-1860
 
 $screen: "only screen";
 
@@ -330,11 +331,11 @@ $anchor-font-color: $primary-color;
 
 // $include-html-accordion-classes: $include-html-classes;
 
-// $accordion-navigation-padding: rem-calc(16);
-// $accordion-navigation-bg-color: $silver  ;
+$accordion-navigation-padding: 0; //rem-calc(10 15);
+$accordion-navigation-bg-color: $primary-color; //$silver  ;
 // $accordion-navigation-hover-bg-color: scale-color($accordion-navigation-bg-color, $lightness: -5%);
 // $accordion-navigation-active-bg-color: scale-color($accordion-navigation-bg-color, $lightness: -3%);
-// $accordion-navigation-font-color: $jet;
+$accordion-navigation-font-color: white;
 // $accordion-navigation-font-size: rem-calc(16);
 // $accordion-navigation-font-family: $body-font-family;
 
@@ -625,7 +626,7 @@ $button-bg-hover: darken($grey-color, 10%);//scale-color($button-bg-color, $ligh
 // $include-html-form-classes: $include-html-classes;
 
 // We use this to set the base for lots of form spacing and positioning styles
-// $form-spacing: rem-calc(16);
+$form-spacing: rem-calc(12);
 
 // We use these to style the labels in different ways
 // $form-label-pointer: pointer;
@@ -638,12 +639,12 @@ $button-bg-hover: darken($grey-color, 10%);//scale-color($button-bg-color, $ligh
 // $input-font-family: inherit;
 // $input-font-color: rgba(0,0,0,0.75);
 // $input-font-size: rem-calc(14);
-// $input-bg-color: $white;
-// $input-focus-bg-color: scale-color($white, $lightness: -2%);
+$input-bg-color: $grey-color;
+$input-focus-bg-color: darken($grey-color, 5%);
 $input-border-color: $primary-color; //scale-color($white, $lightness: -20%);
 // $input-focus-border-color: scale-color($white, $lightness: -40%);
 // $input-border-style: solid;
-// $input-border-width: 1px;
+$input-border-width: 0; //1px;
 $input-border-radius: 0; //$global-radius;
 // $input-disabled-bg: $gainsboro;
 // $input-disabled-cursor: $cursor-default-value;
@@ -688,7 +689,7 @@ $input-box-shadow: none; //inset 0 1px 2px rgba(0,0,0,0.1);
 // $glowing-effect-color: $input-focus-border-color;
 
 // Select variables
-// $select-bg-color: $ghost;
+$select-bg-color: $grey-color; //$ghost;
 // $select-hover-bg-color: scale-color($select-bg-color, $lightness: -3%);
 
 // 12. Icon Bar

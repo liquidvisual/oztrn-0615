@@ -1,0 +1,66 @@
+/*
+    SIDE-NAV.CSS
+
+    - Last updated: 26.06.15
+    - hello@liquidvisual.com
+*/
+//-----------------------------------------------------------------
+// Variables
+//-----------------------------------------------------------------
+//-----------------------------------------------------------------
+// Side Nav
+//-----------------------------------------------------------------
+
+.side-nav {
+	list-style: none;
+	margin: 0;
+	font-style: italic;
+	text-transform: lowercase;
+
+	> li > a:before {
+		content: ">";
+		font-size: rem-calc(12);
+		position: absolute;
+		top: 2px;
+		left: -15px;
+		font-style: normal;
+		color: lighten(#7C7776, 20%);
+	}
+
+	li.active-parent > a {
+		margin-bottom: rem-calc(5);
+		color: black;
+	}
+
+	a {
+		@include transition('color');
+		display: inline-block;
+		position: relative;
+		color: $body-font-color;
+		font-size: rem-calc(14);
+
+		&:hover {
+			color: black;
+		}
+	}
+
+	ul {
+		margin-bottom: rem-calc(30);
+	}
+
+	ul a {
+		color: lighten(#7C7776, 30%);
+	}
+
+	ul li.active a {
+		color: $body-font-color;
+	}
+
+}
+
+//-----------------------------------------------------------------
+//
+//-----------------------------------------------------------------
+//=========================================
+//
+//=========================================

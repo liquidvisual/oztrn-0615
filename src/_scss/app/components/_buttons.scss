@@ -79,7 +79,7 @@
 }
 
 //-----------------------------------------------------------------
-// News Button (homepage only)
+// News Triangle Button (homepage only)
 //-----------------------------------------------------------------
 
 .news-button {
@@ -101,4 +101,52 @@
 	&:hover {
 		color: darken(#ED5C31, 30%);
 	}
+}
+
+//-----------------------------------------------------------------
+// Grey Buttons
+//-----------------------------------------------------------------
+
+.lv-super .grey-button {
+    position: relative;
+    text-align: left;
+    padding: rem-calc(0 15 0 45);
+    margin-bottom: rem-calc(6);
+    font-style: normal;
+    font-size: rem-calc(16);
+    line-height: rem-calc(42);
+    color: $body-font-color !important; // eh
+
+    &:before,
+    &:after {
+        position: absolute;
+        left: rem-calc(15);
+        font-family: 'FontAwesome';
+        font-size: rem-calc(34);
+        color: $body-font-color;
+    }
+
+    &:after {
+        content: "\f105";
+        left: auto;
+        right: rem-calc(15);
+    }
+}
+
+// Hovers
+.no-touch .lv-super .grey-button:hover {
+    // background: darken($mid-grey, 10%);
+}
+
+//=========================================
+// Download Button
+//=========================================
+
+.lv-super .download-button {
+    // padding: rem-calc(16 35 16 50);
+
+    &:before {
+        content: "\f15b";
+        font-size: rem-calc(20);
+    }
 }

@@ -1,0 +1,43 @@
+---
+layout: master
+---
+
+{% assign settings = site.data.settings %}
+
+<!-- STAGE -->
+<section class="stage">
+	{{ content }}
+</section>
+
+<!-- SIDEBAR -->
+<aside class="sidebar">
+	<div class="sidebar-content">
+		<div class="sidebar-content-scroller">
+
+			{% if page.sidebar_content %}
+			    {% include {{ page.sidebar_content }} exclude_top_level=true %}
+			{% else %}
+				{% include sidebar/sidebar_default.html %}
+			{% endif %}
+
+		</div> <!-- .sidebar-content-scroller -->
+
+	</div> <!-- .sidebar-content -->
+
+	<div class="sidebar-footer">
+		{% include footer.html %}
+	</div>
+
+	<!-- Sidebar Vertical Strip -->
+	<div class="sidebar-vertical-strip show-for-large-up">
+
+		<!-- Optional -->
+		<div class="sidebar-vertical-strip-logo"></div>
+
+		<ul class="social-networks">
+			<li><a href="{{ settings.facebook }}" target="_blank"><img width="18" src="/img/template/facebook-icon@2x.png"></a></li>
+			<li><a href="{{ settings.twitter }}" target="_blank"><img width="18" src="/img/template/twitter-icon@2x.png"></a></li>
+			<li><a href="{{ settings.linked_in }}" target="_blank"><img width="18" src="/img/template/linked-in-icon@2x.png"></a></li>
+		</ul>
+	</div>
+</aside>

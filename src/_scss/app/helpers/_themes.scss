@@ -1,17 +1,317 @@
 /*
     THEMES.CSS
 
-    - Last updated: ^^^^^^^^
+    - Last updated: 24.06.15
     - hello@liquidvisual.com
 */
 //-----------------------------------------------------------------
 // Variables
 //-----------------------------------------------------------------
+
+$blue-theme-color: #1FB8F3;
+$bronze-theme-color: #8B8584;
+$green-theme-color: #2DB475;
+$lime-theme-color: #8EC449;
+$orange-theme-color: #EF5B30;
+$red-theme-color: #FC0D1B;
+$yellow-theme-color: #F9AF48;
+
 //-----------------------------------------------------------------
-// Themes
+// Blue Theme
 //-----------------------------------------------------------------
 
+.blue-theme {
+	.main .header,
+	.sidebar-vertical-strip {
+		background: $blue-theme-color;
+	}
 
+	.media-article h2,
+	.main-body a,
+	.media-link {
+		color: $blue-theme-color;
+
+		&:hover {
+			color: darken($blue-theme-color, 10%);
+		}
+	}
+
+	.stage {
+		background-image: url(../img/template/coaching-bg.svg);
+	}
+
+	.main h1,
+	.main h2,
+	.main h3,
+	.main h4,
+	.main h5,
+	.main h6 {
+		color: $blue-theme-color;
+	}
+}
+
+//=========================================
+// Green Theme
+//=========================================
+
+.green-theme {
+	.main .header,
+	.sidebar-vertical-strip {
+		background: $green-theme-color;
+	}
+
+	.stage {
+		background: none;
+		padding-bottom: 0; // no trailing image
+	}
+
+	.media-article h2,
+	.main-body a,
+	.media-link {
+		color: $green-theme-color;
+
+		&:hover {
+			color: darken($green-theme-color, 10%);
+		}
+	}
+
+	.main h1,
+	.main h2,
+	.main h3,
+	.main h4,
+	.main h5,
+	.main h6,
+	.main h1 small {
+		color: $green-theme-color;
+		display: block;
+		margin-bottom: rem-calc(30);
+	}
+
+	&.green-theme-red-text {
+		.main h1,
+		.main h2,
+		.main h3,
+		.main h4,
+		.main h5,
+		.main h6,
+		.main h1 small {
+			color: $red-theme-color;
+		}
+	}
+
+	.main h1 small {
+		padding: rem-calc(10 0);
+	}
+}
+
+//=========================================
+// Lime Theme
+//=========================================
+
+.lime-theme {
+	.main .header,
+	.sidebar-vertical-strip {
+		background: $lime-theme-color;
+	}
+
+	.media-article h2,
+	.main-body a,
+	.media-link {
+		color: $lime-theme-color;
+
+		&:hover {
+			color: darken($lime-theme-color, 10%);
+		}
+	}
+
+	.stage {
+		background-image: url(../img/template/consulting-bg.svg);
+	}
+
+	.main h1,
+	.main h2,
+	.main h3,
+	.main h4,
+	.main h5,
+	.main h6 {
+		color: $lime-theme-color;
+	}
+}
+
+//=========================================
+// Orange Theme
+//=========================================
+
+.orange-theme {
+	.main .header,
+	.sidebar-vertical-strip {
+		background: $orange-theme-color;
+	}
+
+	.media-article h2,
+	.main-body a,
+	.media-link {
+		color: $orange-theme-color;
+
+		&:hover {
+			color: darken($orange-theme-color, 10%);
+		}
+	}
+
+	.main h1,
+	.main h2,
+	.main h3,
+	.main h4,
+	.main h5,
+	.main h6 {
+		color: $orange-theme-color;
+	}
+}
+
+//=========================================
+// Red Theme
+//=========================================
+
+.red-theme {
+	.main .header,
+	.sidebar-vertical-strip {
+		background: $red-theme-color;
+	}
+
+	.media-article h2,
+	.main-body a,
+	.media-link {
+		color: $red-theme-color;
+
+		&:hover {
+			color: darken($red-theme-color, 10%);
+		}
+	}
+
+	.stage {
+		background-image: url(../img/template/facilitating-bg.svg);
+	}
+
+	.main h1,
+	.main h2,
+	.main h3,
+	.main h4,
+	.main h5,
+	.main h6 {
+		color: $red-theme-color;
+	}
+}
+
+//=========================================
+// Yellow Theme
+//=========================================
+
+.yellow-theme {
+	.main .header,
+	.sidebar-vertical-strip {
+		background: $yellow-theme-color;
+	}
+
+	.media-article h2,
+	.main-body a,
+	.media-link {
+		color: $yellow-theme-color;
+
+		&:hover {
+			color: darken($yellow-theme-color, 10%);
+		}
+	}
+
+	.stage {
+		background-image: url(../img/template/training-bg.svg);
+	}
+
+	.main h1,
+	.main h2,
+	.main h3,
+	.main h4,
+	.main h5,
+	.main h6 {
+		color: $yellow-theme-color;
+	}
+}
+
+//=========================================
+// Fire Theme
+//=========================================
+
+.fire-theme {
+	.stage {
+		background-image: url(../img/template/contact-us-bg.jpg);
+	}
+
+	.main .main-body {
+		// background: aqua;
+		// min-height: 0;
+	}
+
+	.sidebar {
+		width: rem-calc(350);
+	}
+
+	.sidebar-content {
+		background: none;
+	}
+
+	.sidebar-content-scroller {
+		padding: rem-calc(0 15 0 0);
+		height: auto;
+	}
+
+	.sidebar-vertical-strip {
+		background-image: url(../img/template/contact-us-strip@2x.jpg);
+		background-color: #F7A730;
+	}
+}
+
+//-----------------------------------------------------------------
+// Bronze Theme used exclusively by Right Now page
+//-----------------------------------------------------------------
+
+.bronze-theme {
+	.main .header,
+	.sidebar-vertical-strip {
+		background: $bronze-theme-color;
+	}
+
+	.media-article h2,
+	.main-body a,
+	.media-link {
+		color: $bronze-theme-color;
+
+		&:hover {
+			color: darken($bronze-theme-color, 10%);
+		}
+	}
+
+	.main-body {
+		background: white;
+	}
+
+	.main h1,
+	.main h2,
+	.main h3,
+	.main h4,
+	.main h5,
+	.main h6 {
+		color: $bronze-theme-color;
+	}
+
+	.stage {
+		background-image: url(../img/template/right-now-coaching-bg.png);
+	}
+
+	// Reveal logo
+	.main .logo,
+	.sidebar-vertical-strip-logo {
+		display: block;
+	}
+}
 
 //=========================================
 //

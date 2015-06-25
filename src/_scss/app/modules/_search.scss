@@ -8,6 +8,14 @@
 // Variables
 //-----------------------------------------------------------------
 //-----------------------------------------------------------------
+// Page Controls
+//-----------------------------------------------------------------
+
+.lv-page.search-enabled {
+	top: 100px;
+}
+
+//-----------------------------------------------------------------
 // Search
 //-----------------------------------------------------------------
 
@@ -26,6 +34,65 @@
 			border: 1px solid $body-font-color;
 			margin: rem-calc(0 6); // magic
 			border-radius: 100%;
+		}
+	}
+}
+
+//-----------------------------------------------------------------
+// Global Search
+//-----------------------------------------------------------------
+
+.global-search {
+	position: absolute;
+	top: rem-calc(-100);
+	width: 100%;
+	height: rem-calc(100);
+	background: #A4CF4E; //$quaternary-color;
+	overflow: hidden;
+
+	.field-wrapper {
+		position: absolute;
+		top: 50%;
+		right: rem-calc(350);
+		width: rem-calc(380);
+		height: rem-calc(40);
+		margin-top: rem-calc(-40/2); // center
+
+		input {
+			height: 100%;
+			float: left;
+			background: white;
+			width: 90%;
+			padding: rem-calc(0 15);
+			font-style: italic;
+		}
+
+		.button {
+			width: 10%;
+			height: 100%;
+			text-align: center;
+			margin: 0;
+			font-size: rem-calc(30);
+			color: white;
+			padding: 0;
+			line-height: rem-calc(40);
+			background: #B6E35A;
+			float: right;
+			min-width: 0;
+
+			&:hover {
+				background: darken(#B6E35A, 20%);
+			}
+		}
+
+		.close-btn {
+			position: absolute;
+			right: rem-calc(-330);
+			background: #9CC14C;
+
+			&:hover {
+				background: darken(#9CC14C, 5%);
+			}
 		}
 	}
 }

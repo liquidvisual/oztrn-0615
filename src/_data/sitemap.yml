@@ -6,22 +6,32 @@
   include_children_in_nav: true
   children:
     - title: Our Staff
-      url: /about-us/our-staff/
+      url: /about-us/
       include_children_in_nav: false
       children:
         - title: Denise Picton
           url: /about-us/our-staff/staff-item/
+        - title: Alastair Dow
+          url: /about-us/our-staff/staff-item/
+        - title: David Waterford
+          url: /about-us/our-staff/staff-item/
+        - title: Sarah Sheath
+          url: /about-us/our-staff/staff-item/
+        - title: Jo Battersby
+          url: /about-us/our-staff/staff-item/
+        - title: Brenda Kuhr
+          url: /about-us/our-staff/staff-item/
 
     - title : Clients
-      url: /about-us/clients/
+      url: /about-us/
     - title: Reconciliation
-      url: /about-us/reconciliation/
+      url: /about-us/
     - title: Latest News
       url: /about-us/latest-news/
       include_children_in_nav: false
       children:
         - title: News Item
-          url: /about-us/news/news-item/
+          url: /about-us/latest-news/news-item/
 
 - title: "Products & Services"
   url: /products-and-services/
@@ -29,12 +39,84 @@
   children:
     - title: Coaching
       url: /products-and-services/coaching/
+      include_children_in_nav: false
+      children:
+        - title: Executive
+          url: "#"
+        - title: Management
+          url: "#"
+        - title: Frontline Staff
+          url: "#"
+        - title: Project
+          url: "#"
+        - title: Special Topic
+          url: "#"
+        - title: Training Your Managers
+          url: "#"
+        - title: Case Studies
+          url: "#"
+
     - title: Facilitating
       url: /products-and-services/facilitating/
+      include_children_in_nav: false
+      children:
+        - title: Strategic Thinking
+          url: "#"
+        - title: Strategic Workshops
+          url: "#"
+        - title: Facilitating Projects
+          url: "#"
+        - title: Management Processes
+          url: "#"
+        - title: Facilitating Conferences and Workshops
+          url: "#"
+        - title: Facilitating Dialogue
+          url: "#"
+        - title: Facilitating Teamwork - Training People to Facilitate
+          url: "#"
+        - title: Facilitation Case Studies
+          url: "#"
+
     - title: Training
       url: /products-and-services/training/
+      include_children_in_nav: false
+      children:
+        - title: Executive
+          url: "#"
+        - title: Management
+          url: "#"
+        - title: Frontline Staff
+          url: "#"
+        - title: Project
+          url: "#"
+        - title: Special Topic
+          url: "#"
+        - title: Training Your Managers
+          url: "#"
+        - title: Case Studies
+          url: "#"
+
     - title: Consulting
       url: /products-and-services/consulting/
+      include_children_in_nav: false
+      children:
+        - title: Program Review and Consulting
+          url: "#"
+        - title: Management
+          url: "#"
+        - title: Frontline Staff
+          url: "#"
+        - title: Project
+          url: "#"
+        - title: Special Topic
+          url: "#"
+        - title: Training Your Managers
+          url: "#"
+        - title: Case Studies
+          url: "#"
+
+    - title: Right Now
+      url: /products-and-services/right-now-coaching/
 
 - title: Contact
   url: /contact/

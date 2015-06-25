@@ -15,6 +15,7 @@ $sidebar-vertical-strip-width: rem-calc(96);
 //-----------------------------------------------------------------
 
 .sidebar {
+	@include clearfix();
 	// padding: rem-calc(15 0 0 0);
 	// margin: rem-calc(0 $sidebar-vertical-strip-width 0 15);
 	padding: rem-calc(15);
@@ -39,12 +40,19 @@ $sidebar-vertical-strip-width: rem-calc(96);
 
 .sidebar-content {
 	position: relative;
-	padding: rem-calc(20);
-	margin-bottom: rem-calc(40);
+	padding: rem-calc(20 20 30 20);
+	margin-bottom: rem-calc(40); // desktop
 	background: $grey-color;
 	background-size: contain;
 
+	@media #{$medium-up} {
+	    width: 65%;
+	    margin-bottom: 0;
+	}
+
 	@media #{$xlarge-up} {
+		width: auto;
+		margin-bottom: rem-calc(40); // desktop
 		padding: rem-calc(170 0 38 0);
 		height: rem-calc(750);
 		background: url(../img/template/grey-triangle@2x.png);
@@ -68,9 +76,24 @@ $sidebar-vertical-strip-width: rem-calc(96);
 .sidebar-footer {
 	font-style: italic;
 
+	@media #{$medium-only}, #{$large-only} {
+		position: absolute;
+		bottom: 0;
+		right: rem-calc(15);
+		text-align: right;
+	}
+
+	@media #{$large-up} {
+	    right: $sidebar-vertical-strip-width/3 + rem-calc(20);
+	}
+
 	p {
 		font-size: rem-calc(13);
 		color: #7C7776; // is this body text color?
+	}
+
+	.button {
+		margin-bottom: rem-calc(15); // detail
 	}
 }
 
@@ -96,6 +119,7 @@ $sidebar-vertical-strip-width: rem-calc(96);
 }
 
 .sidebar-vertical-strip-logo {
+	display: none; // shows only when the bronze-theme is applied
 	position: absolute;
 	top: rem-calc(30);
 	width: 100%;
@@ -105,5 +129,20 @@ $sidebar-vertical-strip-width: rem-calc(96);
 
 	@media #{$xlarge-up} {
 	    top: rem-calc(110);
+	}
+}
+
+//-----------------------------------------------------------------
+// Sidebox Component
+//-----------------------------------------------------------------
+
+.side-box {
+	display: inline-block;
+	background: white;
+	padding: rem-calc(5 10 10 10);
+	margin-bottom: rem-calc(15);
+
+	img {
+		padding: rem-calc(15);
 	}
 }

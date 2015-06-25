@@ -13,6 +13,7 @@
 
 h1 {
 	margin-bottom: rem-calc(20);
+	font-weight: 100;
 }
 
 h3 {
@@ -23,29 +24,27 @@ h1, h2, h3, h4, h5, h6 {
 	text-transform: lowercase;
 }
 
-// refactor
-p.lead {
+p.lead,
+.lead > p {
 	font-size: $paragraph-font-size;
 
 	@media #{$medium-up} {
-	    font-size: rem-calc(30);
+	    font-size: rem-calc(19);
+	    line-height: 1.5;
+	    font-weight: 100;
 	}
 }
 
 p, ul {
-	font-size: rem-calc(16);
+	// font-size: rem-calc(16);
 
 	@media #{$large-up} {
-		font-size: rem-calc(16);
+		// font-size: rem-calc(16);
 	}
 
 	@media #{$xxlarge-up} {
-		font-size: $paragraph-font-size;
+		// font-size: $paragraph-font-size;
 	}
-}
-
-strong, b {
-	// font-family: 'HelveticaNeueW01-BdExt';
 }
 
 //=========================================

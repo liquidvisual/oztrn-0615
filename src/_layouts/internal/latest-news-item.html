@@ -1,0 +1,53 @@
+---
+layout: internal
+sidebar_content: "sidebar/sidebar_navigation.html"
+---
+
+{% assign news = site.data.articles %}
+{% assign item = news[1] %}
+
+<main class="main">
+
+	<header class="header">
+		<span>{{ page.title }}</span>
+	</header>
+
+	<div class="main-columns">
+		<div class="main-col-1 main-body">
+
+			<article class="media-article">
+				<div class="media-body">
+					<h1>{{ item.title }}</h1>
+					<date class="media-tagline">{{ item.date | date: "%A %d %b %Y" }}</date>
+					{{ item.body | markdownify }}
+				</div>
+			</article>
+
+		</div>
+
+		<!-- Main Side Panel -->
+		<div class="main-col-2 main-side-panel">
+
+			<div class="sidebar-box">
+				<h4>Categories</h4>
+				<ul>
+					<li><a href="#">Clients</a></li>
+					<li><a href="#">Leading &amp; Managing</a></li>
+					<li><a href="#">Fun</a></li>
+					<li><a href="#">News</a></li>
+					<li><a href="#">Planning</a></li>
+					<li><a href="#">Political Savvy</a></li>
+					<li><a href="#">Self Development</a></li>
+					<li><a href="#">Teams</a></li>
+					<li><a href="#">Technology</a></li>
+				</ul>
+			</div>
+
+			<div class="sidebar-box">
+				<h4>Archive</h4>
+				{% include snippets/accordion.html data=site.data.news_archive %}
+			</div>
+
+		</div> <!-- main-side-panel -->
+	</div> <!-- .main-columns -->
+</main>

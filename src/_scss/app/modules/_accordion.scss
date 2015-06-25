@@ -1,0 +1,128 @@
+/*
+    ACCORDION.CSS
+
+    - updated: 09.12.14
+    - liquidvisual.com
+*/
+//-----------------------------------------------------------------
+// Variables
+//-----------------------------------------------------------------
+//-----------------------------------------------------------------
+// Media Tile
+//-----------------------------------------------------------------
+
+/* What gives, Webkit?! */
+.lv-super .accordion,
+.lv-super .accordion *,
+.lv-super .accordion a,
+.lv-super .tabs-content .content,
+.lv-super .tabs a,
+.lv-super .tabs *,
+.lv-super {
+    outline: none !important;
+}
+
+//=========================================
+// Accordion Module
+//=========================================
+
+.accordion,
+.accordion .content {
+    margin-bottom: 0;
+    overflow: hidden;
+
+    h2 {
+        @media #{$medium-up} {
+            font-size: rem-calc(22);
+        }
+    }
+}
+
+.accordion-navigation {
+    padding-bottom: 6px;
+}
+
+.lv-super .accordion-navigation > a {
+    @include transition('background-color');
+    position: relative;
+    padding: rem-calc(0 15);
+    line-height: rem-calc(42);
+    color: white !important; // gah foundation
+}
+
+.lv-super .main-side-panel .accordion-navigation  {
+    padding: 0; // remove bottom gap
+
+    > a {
+        background: $grey-color;
+        color: $body-font-color !important; // override theme
+        padding: 0;
+        line-height: rem-calc(30);
+    }
+
+    // sidebar box should handle this - but Foundation sucks
+    a {
+        @include transition('color');
+        &:hover {
+            color: black !important;
+        }
+    }
+
+    i {
+        font-size: rem-calc(20);
+        right: 0;
+    }
+
+    .content i {
+        font-size: rem-calc(12);
+    }
+}
+
+.accordion-navigation .icon {
+    position: absolute;
+    top: 50%;
+    right: rem-calc(15);
+    font-size: rem-calc(34);
+    line-height: 0;
+}
+
+//=========================================
+// Up / Down Arrows
+//=========================================
+
+/* Up/Down Arrows */
+.accordion-navigation.active .fa-angle-down {
+    display: none;
+}
+
+.accordion-navigation.active .fa-angle-up {
+    display: block;
+    // top: 45%;
+}
+
+.accordion-navigation .fa-angle-up {
+    display: none;
+}
+
+//=========================================
+// Sidebar Context (generally smaller)
+//=========================================
+
+.sidebar .accordion .content {
+    margin-bottom: 1px;
+}
+
+.sidebar .accordion-navigation {
+    padding-bottom: 0;
+}
+
+.sidebar .accordion-navigation > a {
+    position: relative;
+    margin-bottom: 1px;
+    padding: rem-calc(8 42 8 15);
+    font-size: rem-calc(14);
+}
+
+.sidebar .accordion-navigation .icon {
+    font-size: rem-calc(20);
+}

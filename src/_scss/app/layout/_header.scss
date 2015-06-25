@@ -48,6 +48,8 @@
 //-----------------------------------------------------------------
 
 .global-header .logo {
+	// position: relative;
+
 	@media #{$medium-up} {
 	    // position: fixed;
 	    // background: rgba(white, 0.8);
@@ -58,6 +60,11 @@
 
 	@media #{$small-only} {
 	    // visibility: hidden; // we still want the height
+	}
+
+	@media #{$xxlarge-up} {
+	    // left: 70px;
+	    margin-left: rem-calc(44); // magic - no idea
 	}
 
 	img {

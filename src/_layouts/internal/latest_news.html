@@ -1,0 +1,57 @@
+---
+layout: internal
+sidebar_content: "sidebar/sidebar_navigation.html"
+---
+
+{% assign news = site.data.articles %}
+
+<main class="main">
+
+	<header class="header">
+		<span>{{ page.title }}</span>
+	</header>
+
+	<div class="main-columns">
+		<div class="main-col-1 main-body">
+
+			<!-- News Articles -->
+			<div class="media-articles">
+				{% for item in news %}
+					{% include media_article.html %}
+				{% endfor %}
+			</div>
+
+			<!-- Pagination Controls -->
+			<p>
+				<a href="#" class="left"><i class="fa fa-angle-left"></i> Back</a>
+				<a href="#" class="right">Next <i class="fa fa-angle-right"></i></a>
+			</p>
+
+		</div>
+
+		<!-- Main Side Panel -->
+		<div class="main-col-2 main-side-panel">
+
+			<div class="sidebar-box">
+				<h4>Categories</h4>
+				<ul>
+					<li><a href="#">Clients</a></li>
+					<li><a href="#">Leading &amp; Managing</a></li>
+					<li><a href="#">Fun</a></li>
+					<li><a href="#">News</a></li>
+					<li><a href="#">Planning</a></li>
+					<li><a href="#">Political Savvy</a></li>
+					<li><a href="#">Self Development</a></li>
+					<li><a href="#">Teams</a></li>
+					<li><a href="#">Technology</a></li>
+				</ul>
+			</div>
+
+			<div class="sidebar-box">
+				<h4>Archive</h4>
+				{% include snippets/accordion.html data=site.data.news_archive %}
+			</div>
+
+		</div> <!-- main-side-panel -->
+	</div> <!-- .main-columns -->
+</main>
