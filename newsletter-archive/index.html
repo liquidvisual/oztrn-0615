@@ -13,12 +13,12 @@
         
         
             
-                Contact Us - 
+                Newsletter Archive - 
             
         
     </title>
 
-    <link rel="canonical" href="/contact/">
+    <link rel="canonical" href="/newsletter-archive/">
 
     <!-- Google Fonts CDN -->
     <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=PT+Sans:400,700,400italic,700italic">
@@ -31,7 +31,7 @@
 </head>
 <body>
     <div class="lv-super dev-mode-enabled">
-        <div class="lv-page fire-theme">
+        <div class="lv-page green-theme">
 
             <!-- HEADER -->
             <header class="global-header js-global-header FixedX">
@@ -157,7 +157,7 @@
 	</li>
 	
 	
-	<li class="active">
+	<li class="">
 		<a href="/contact/">Contact</a>
 
 		
@@ -175,27 +175,81 @@
             
 
 <!-- STAGE -->
-<section class="stage">
-	<main class="main">
+<section class="stage has-trailing-bg">
+	
 
-		<div class="main-columns">
-			<div class="main-col-1 main-body">
-				<img class="logo-bg" src="/assets/img/template/logo-symbol.cb27.svg" alt="oztrain logo">
+<main class="main">
+
+	<header class="header">
+		<span>Newsletter Archive</span>
+	</header>
+
+	<div class="main-columns">
+		<div class="main-col-1 main-body">
+
+			<!-- Newsleters -->
+			<div class="media-articles media-articles-listing">
+				
+					<article class="media-article">
+	<a href="/about-us/latest-news/news-item/">
+		<div class="media-body">
+			<h2>That's Pie Country. They Do a Lot of Baking Up There.</h2>
+			<date class="media-tagline">Tuesday 02 Sep 2014</date>
+
+			
+
+		</div>
+	</a>
+</article>
+				
+					<article class="media-article">
+	<a href="/about-us/latest-news/news-item/">
+		<div class="media-body">
+			<h2>What's the Deal with Airline Peanuts?</h2>
+			<date class="media-tagline">Saturday 04 Oct 2014</date>
+
+			
+
+		</div>
+	</a>
+</article>
+				
+					<article class="media-article">
+	<a href="/about-us/latest-news/news-item/">
+		<div class="media-body">
+			<h2>Nothing's Finer Than Being in Your Diner</h2>
+			<date class="media-tagline">Friday 21 Nov 2014</date>
+
+			
+
+		</div>
+	</a>
+</article>
+				
+					<article class="media-article">
+	<a href="/about-us/latest-news/news-item/">
+		<div class="media-body">
+			<h2>Yadda Yadda Yadda</h2>
+			<date class="media-tagline">Monday 21 Jul 2014</date>
+
+			
+
+		</div>
+	</a>
+</article>
+				
 			</div>
 
-			<!-- Main Side Panel -->
-			<div class="main-col-2 main-side-panel">
+			<!-- Pagination Controls -->
+			<p>
+				<a href="#" class="left"><i class="fa fa-angle-left"></i> Back</a>
+				<a href="#" class="right">Next <i class="fa fa-angle-right"></i></a>
+			</p>
 
-				
-<p><b>oz</b>train pty ltd <br />
-Suite 903, The Aurora Building<br /> 147 Pirie Street Adelaide<br /> South Australia 5000 <br />
-p <a href="tel:+61 8 8100 2800">+61 8 8100 2800</a> <br />
-<a href="tel:oztrain@oztrain.com.au">oztrain@oztrain.com.au</a></p>
+		</div>
 
-
-			</div> <!-- main-side-panel -->
-		</div> <!-- .main-columns -->
-	</main>
+	</div> <!-- .main-columns -->
+</main>
 </section>
 
 <!-- SIDEBAR -->
@@ -204,10 +258,13 @@ p <a href="tel:+61 8 8100 2800">+61 8 8100 2800</a> <br />
 		<div class="sidebar-content-scroller">
 
 			
-			    <form data-abide novalidate method="post" action="#">
+			    <h3>Newsletter Sign Up</h3>
+<br>
 
-	<!-- Name -->
-	<div class="row">
+<form class="newsletter-signup-form" data-abide novalidate method="post" action="#">
+
+	<!-- Name* -->
+	<div class="row collapse">
 		<div class="columns">
 			<label>
 				<input name="name" type="text" placeholder="name*" required>
@@ -216,8 +273,8 @@ p <a href="tel:+61 8 8100 2800">+61 8 8100 2800</a> <br />
 		</div>
 	</div>
 
-	<!-- Email -->
-	<div class="row">
+	<!-- Email* -->
+	<div class="row collapse">
 		<div class="columns">
 			<label>
 				<input name="email" type="email" placeholder="email*" required>
@@ -226,37 +283,8 @@ p <a href="tel:+61 8 8100 2800">+61 8 8100 2800</a> <br />
 		</div>
 	</div>
 
-	<!-- Website (Optional) -->
-	<div class="row">
-		<div class="columns">
-			<label>
-				<input name="website" type="text" placeholder="website">
-			</label>
-			<small class="error">Please try again.</small>
-		</div>
-	</div>
-
-	<!-- Subject -->
-	<div class="row">
-		<div class="columns">
-			<label>
-				<input name="subject" type="text" placeholder="subject">
-			</label>
-			<small class="error">Please try again.</small>
-		</div>
-	</div>
-
-	<!-- Message -->
-	<div class="row">
-		<div class="columns">
-			<label></label>
-			<textarea rows="10" name="message" placeholder="message*" required></textarea>
-			<small class="error">Please enter a message.</small>
-		</div>
-	</div>
-
 	<!-- Submit -->
-	<div class="row">
+	<div class="row collapse">
 		<div class="columns">
 			<button type="submit" class="button">submit</button>
 		</div>
@@ -266,9 +294,6 @@ p <a href="tel:+61 8 8100 2800">+61 8 8100 2800</a> <br />
 			
 
 		</div> <!-- .sidebar-content-scroller -->
-
-		<!-- News Button on Homepage only -->
-		
 
 	</div> <!-- .sidebar-content -->
 
@@ -284,6 +309,9 @@ p <a href="tel:+61 8 8100 2800">+61 8 8100 2800</a> <br />
 
 	<!-- Sidebar Vertical Strip -->
 	<div class="sidebar-vertical-strip show-for-large-up">
+
+		<!-- Optional -->
+		<div class="sidebar-vertical-strip-logo"></div>
 
 		<ul class="social-networks">
 			<li><a href="https://www.facebook.com/pages/OzTrain/163303870405182" target="_blank"><img width="18" src="/assets/img/template/facebook-icon@2x.d0eb.png"></a></li>
@@ -408,7 +436,7 @@ p <a href="tel:+61 8 8100 2800">+61 8 8100 2800</a> <br />
 	</li>
 	
 	
-	<li class="active">
+	<li class="">
 		<a href="/contact/">Contact</a>
 
 		
