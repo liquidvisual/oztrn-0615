@@ -22,6 +22,11 @@
 	margin-bottom: rem-calc(10);
 }
 
+.lv-super .error input,
+.lv-super .error textarea {
+	margin-bottom: 0;
+}
+
 .lv-super form .button {
 	display: inline-block;
 	width: auto;

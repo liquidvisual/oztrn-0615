@@ -134,7 +134,7 @@ $yellow-theme-color: #F9AF48;
 }
 
 //=========================================
-// Orange Theme
+// Orange Theme (exclusive to about)
 //=========================================
 
 .orange-theme {
@@ -150,6 +150,25 @@ $yellow-theme-color: #F9AF48;
 
 		&:hover {
 			color: darken($orange-theme-color, 10%);
+		}
+	}
+
+	.stage {
+		padding-bottom: 0; // no trailing
+		background-image: url(../img/template/training-bg.svg);
+	}
+
+	// NO BG - used on staff members section
+	&.orange-theme-no-bg .stage {
+		background: none;
+	}
+
+	.main {
+		// margin-left: 15px;
+		// padding-top: rem-calc(60);
+
+		@media #{$xxlarge-up} {
+		    // margin-left: 0;
 		}
 	}
 

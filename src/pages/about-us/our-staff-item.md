@@ -1,7 +1,7 @@
 ---
-layout: internal/about_us_item
+layout: internal/our_staff_item
 title: Denise Picton
-permalink: /about-us/about-us-item/
+permalink: /about-us/our-staff/our-staff-item/
 theme: "green-theme green-theme-red-text"
 side_nav_top_level_id: 1
 side_nav_second_level_id: 1

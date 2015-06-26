@@ -24,8 +24,9 @@ html, body {
 }
 
 .lv-page {
-	@include transition('top 0.4s, bottom 0.4s');
+	@include transition('top, bottom');
 	position: relative;
+	top: 0;
 
 	@media #{$small-only} {
 	    padding-top: rem-calc(65);

@@ -136,7 +136,7 @@ $sidebar-width: rem-calc(246) !default;
 //-----------------------------------------------------------------
 
 .side-box {
-	display: inline-block;
+	display: block;
 	background: white;
 	padding: rem-calc(5 10 10 10);
 	margin-bottom: rem-calc(15);
