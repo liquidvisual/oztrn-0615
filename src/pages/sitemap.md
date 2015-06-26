@@ -6,7 +6,7 @@ permalink: /sitemap/
 
 <h2>All Available Pages for {{ site.data.settings.title }}</h2>
 
-<ul class="triangle-list">
+<ul class="triangle-list check-list">
 	{% for item in site.pages %}
 		<li><a href="{{ item.url }}">{{ item.layout }}</a> <small>({{ item.title }})</small></li>
 	{% endfor %}

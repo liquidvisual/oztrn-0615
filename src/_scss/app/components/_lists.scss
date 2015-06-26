@@ -40,6 +40,13 @@ ul li {
 	}
 }
 
+.check-list {
+	li a:before {
+		content: "\f00c";
+		color: $quaternary-color;
+	}
+}
+
 //=========================================
 // Foundation List Override
 //=========================================

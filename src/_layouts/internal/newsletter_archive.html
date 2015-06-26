@@ -1,0 +1,33 @@
+---
+layout: internal
+sidebar_content: "sidebar/sidebar_newsletter_form.html"
+---
+
+{% assign news = site.data.articles %}
+
+<main class="main">
+
+	<header class="header">
+		<span>{{ page.title }}</span>
+	</header>
+
+	<div class="main-columns">
+		<div class="main-col-1 main-body">
+
+			<!-- Newsleters -->
+			<div class="media-articles media-articles-listing">
+				{% for item in news %}
+					{% include media_article.html exclude_body=true %}
+				{% endfor %}
+			</div>
+
+			<!-- Pagination Controls -->
+			<p>
+				<a href="#" class="left"><i class="fa fa-angle-left"></i> Back</a>
+				<a href="#" class="right">Next <i class="fa fa-angle-right"></i></a>
+			</p>
+
+		</div>
+
+	</div> <!-- .main-columns -->
+</main>

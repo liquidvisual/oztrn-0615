@@ -25,8 +25,23 @@
 .lv-super form .button {
 	display: inline-block;
 	width: auto;
-	padding: rem-calc(10 15);
 	min-width: 0;
+	padding: rem-calc(6 15);
+	background: darken($grey-color, 6%);
+
+	&:hover {
+		background: darken($grey-color, 10%);
+	}
+}
+
+//-----------------------------------------------------------------
+//
+//-----------------------------------------------------------------
+
+.newsletter-signup-form {
+	input {
+		background: white;
+	}
 }
 
 //=========================================
