@@ -1,0 +1,41 @@
+/*
+    STAGE.CSS
+
+    - Last updated: 29.06.15
+    - hello@liquidvisual.com
+*/
+//-----------------------------------------------------------------
+// Variables
+//-----------------------------------------------------------------
+
+$sidebar-vertical-strip-width: rem-calc(96) !default;
+$sidebar-width: rem-calc(246) !default;
+
+//-----------------------------------------------------------------
+// Stage
+//-----------------------------------------------------------------
+
+.stage {
+	background-repeat: no-repeat;
+	background-size: contain;
+	background-position: -1px bottom; // 1px bleed
+
+	// POSSIBILITY - trailing images on mobile
+	&.has-trailing-bg {
+		@media #{$small-only} {
+			padding-bottom: 74%;
+		}
+	}
+
+	@media #{$large-up} {
+	    margin-right: $sidebar-vertical-strip-width + rem-calc(10);
+	}
+
+	@media #{$xlarge-up} {
+	    margin-right: rem-calc(340 + 30); // 30 is padding
+	}
+}
+
+//-----------------------------------------------------------------
+//
+//-----------------------------------------------------------------
