@@ -14,30 +14,26 @@ var splashScreen = $('.splash-screen');
 var splashScreenViewed = localStorage.splashScreenViewed;
 var splashScreenEnabled = $('.splash-screen-enabled').length;
 
+var hasLocalStorage = typeof(Storage) != "undefined";
+
 //-----------------------------------------------------------------
 // Intro Animation
 //-----------------------------------------------------------------
 
 $(window).load(function() {
-
-	if (typeof(Storage) != "undefined" && splashScreenEnabled) {
-
-		// Reset
-		// localStorage.splashScreenViewed = "";
-
+	if (hasLocalStorage && splashScreenEnabled) {
 		if (!splashScreenViewed) {
 			lvPage.css('visibility', 'visible');
 			splashScreen.css('visibility', 'visible').transition({ opacity: 0, delay: 1500 }, 1000, function(){ $(this).remove();});
-
-			// Store site visit
-			localStorage.splashScreenViewed = true;
+			localStorage.splashScreenViewed = true; // Store site visit
 			return;
 		}
+	} else {
+		// Reset it
+		localStorage.removeItem("splashScreenViewed");
 	}
 
-	// Reset it
-	localStorage.splashScreenViewed = "";
-
+	// If seen already
 	lvPage.css('visibility', 'visible');
 	splashScreen.remove();
 });
@@ -45,3 +41,6 @@ $(window).load(function() {
 //==================================================
 //
 //==================================================
+
+// Reset
+// localStorage.splashScreenViewed = "";
