@@ -34,6 +34,9 @@
 //-----------------------------------------------------------------
 
 .staff-member-button {
+	img {
+		margin-bottom: rem-calc(10);
+	}
 	h3 {
 		@include transition('opacity');
 
@@ -128,11 +131,11 @@
 .lv-super .grey-button {
     position: relative;
     text-align: left;
-    padding: rem-calc(0 15 0 45);
+    // padding: rem-calc(0 15 0 45);
+    padding: rem-calc(11 30 11 45);
     margin-bottom: rem-calc(6);
     font-style: normal;
     font-size: rem-calc(16);
-    line-height: rem-calc(42);
     color: $body-font-color !important; // eh
 
     &:before,
@@ -146,8 +149,11 @@
 
     &:after {
         content: "\f105";
+        top: 50%;
         left: auto;
         right: rem-calc(15);
+        background: red;
+        line-height: 0;
     }
 }
 

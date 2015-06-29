@@ -22,7 +22,7 @@ $general-header-height: 320px; // remove?
 	// POSSIBILITY - trailing images on mobile
 	&.has-trailing-bg {
 		@media #{$small-only} {
-			padding-bottom: 70%;
+			padding-bottom: 74%;
 		}
 	}
 
@@ -101,8 +101,12 @@ $general-header-height: 320px; // remove?
 	//=========================================
 
 	.main-body {
-		padding: rem-calc(20);
+		padding: rem-calc(15);
 		background: rgba(white, 0.9);
+
+		@media #{$medium-up} {
+		    padding: rem-calc(20);
+		}
 
 		@media #{$xlarge-up} {
 			min-height: 850px; // needs to be higher than sidebar contents - make var?
@@ -160,7 +164,7 @@ $general-header-height: 320px; // remove?
 
 	// Main Side Panel
 	.main-col-2 {
-		padding-left: rem-calc(15);
+		// padding-left: rem-calc(15);
 
 		@media #{$medium-up} {
 		    width: 36%;

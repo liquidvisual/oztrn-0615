@@ -7,11 +7,11 @@ sidebar_content: "sidebar/sidebar_navigation.html"
 
 <main class="main">
 	<div class="main-columns">
-		<ul class="medium-block-grid-3 large-block-grid-6 text-center">
+		<ul class="staff-gallery small-block-grid-2 medium-block-grid-3 large-block-grid-6 text-center">
 			{% for item in staff %}
 				<li>
 					<a class="staff-member-button" href="{{ item.url }}">
-						<img src="/img/content/staff-{{forloop.index}}.png">
+						<img width="120" src="/img/content/staff-{{forloop.index}}.png">
 						<h3>{{ item.title }}</h3>
 					</a>
 				</li>
