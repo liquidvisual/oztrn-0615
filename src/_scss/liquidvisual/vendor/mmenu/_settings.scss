@@ -3,8 +3,8 @@
 // $mm_transitionFunction: ease;
 
 // //	Colors
-$mm_backgroundColor				: $primary-color; //#f3f3f3;
-// $mm_borderColor					: rgba( #000, 0.1 );
+$mm_backgroundColor				: #333333;
+$mm_borderColor					: rgba( #000, 0.1 );
 // $mm_dimmedTextColor				: rgba( #000, 0.3 );
 $mm_emphasizedBackgroundColor	: rgba( #000, 0.1 );
 // $mm_highlightedBackgroundColor	: rgba( #000, 0.05 );
@@ -15,9 +15,23 @@ $mm_textColor					: white; //rgba( #000, 0.7 );
 }
 
 .mm-navbar {
-	background: rgba(black, 0.05);
+	background: #282828;
 	border-bottom: 0 !important;
+
 }
+
+.mm-prev::before,
+.mm-next::after,
+.mm-arrow::after,
+.mm-title {
+	color: rgba(white, 0.6) !important;
+	border-color: rgba(white, 0.6) !important;
+}
+
+.mm-menu .active a {
+	color: #777;
+}
+
 // //	Sizes
 // $mm_padding			: 10px;
 

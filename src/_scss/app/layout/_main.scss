@@ -1,0 +1,105 @@
+/*
+    MAIN.CSS
+
+    - Last updated: 29.06.15
+    - hello@liquidvisual.com
+*/
+//-----------------------------------------------------------------
+// Variables
+//-----------------------------------------------------------------
+//-----------------------------------------------------------------
+// Main
+//-----------------------------------------------------------------
+
+.main {
+	@include clearfix();
+	position: relative;
+	max-width: rem-calc(900);
+
+	@media #{$medium-up} {
+	    margin-right: rem-calc(20);
+	}
+
+	//=========================================
+	// Logo (Above header strip)
+	//=========================================
+
+	.logo {
+		// shows only when the 'bronze-theme' is applied
+		display: none;
+		text-align: right;
+
+		@media #{$large-up} {
+		    position: absolute;
+		    width: 100%;
+		}
+
+		img {
+			background: rgba(white, 0.9);
+			margin-bottom: rem-calc(10);
+			padding: rem-calc(10);
+			border-radius: $global-radius;
+
+			@media #{$large-up} {
+			    position: absolute;
+			    right: 0;
+			    bottom: 10px;
+			    margin: 0;
+			    padding: 0;
+			    background: none;
+			}
+		}
+	}
+
+	//=========================================
+	// Header Strip
+	//=========================================
+
+	.header {
+		background: #8B8584;
+		color: white;
+		padding: rem-calc(2 20);
+		font-size: rem-calc(14);
+		font-style: italic;
+		text-transform: lowercase;
+
+		@media #{$xxlarge-up} {
+		    padding-left: rem-calc(70); // 70 variable
+		}
+	}
+
+	// //=========================================
+	// // Main Body (Hugs right)
+	// //=========================================
+
+	.main-body {
+		background: rgba(white, 0.9);
+
+		@media #{$xlarge-up} {
+			min-height: 850px; // needs to be higher than sidebar contents - make var?
+		}
+
+		// Rare edge case for tall monitors
+		@media #{$xlarge-up} and (min-height: 1170px) {
+			min-height: calc(100vh - 320px);
+		}
+	}
+
+	//=========================================
+	// Logo BG - used on homepage templates
+	//=========================================
+
+	.logo-bg {
+		width: 637px; //2248px;
+
+		@media #{$xxlarge-up} {
+		    position: absolute;
+		    top: -40px;
+		    right: -30px;
+		}
+	}
+}
+
+//-----------------------------------------------------------------
+//
+//-----------------------------------------------------------------

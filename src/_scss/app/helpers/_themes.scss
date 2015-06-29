@@ -292,6 +292,12 @@ $yellow-theme-color: #F9AF48;
 		}
 	}
 
+	.main {
+		@media #{$small-only} {
+		   margin-bottom: rem-calc(20);
+		}
+	}
+
 	.main-body {
 		background: none;
 	}
@@ -302,14 +308,21 @@ $yellow-theme-color: #F9AF48;
 		}
 	}
 
-	.sidebar-content {
+	.sidebar,
+	.sidebar-content,
+	.sidebar-content-scroller {
 		background: none;  // no need
+
+		@media #{$small-only} {
+		    padding: 0 !important;
+		}
 	}
 
 	.sidebar-footer {
 		display: none;
 	}
 
+	// Important
 	.sidebar-content-scroller {
 		padding: rem-calc(0 15 0 0);
 		height: auto;

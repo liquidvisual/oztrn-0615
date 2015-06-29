@@ -13,12 +13,16 @@
 
 .social-networks {
     position: absolute;
-    bottom: 30px;
+    bottom: rem-calc(15);
     left: 0;
     list-style: none;
     margin: 0;
     width: 100%; // center on mobile
 	text-align: center;
+
+	@media #{$xxlarge-up} {
+	    bottom: rem-calc(30);
+	}
 
 	li {
 		margin-bottom: rem-calc(2);

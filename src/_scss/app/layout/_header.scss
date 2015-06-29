@@ -115,33 +115,6 @@
 	}
 }
 
-//-----------------------------------------------------------------
-// has-logo State (fixed)
-//-----------------------------------------------------------------
-
-// .global-header {
-// 	@media #{$small-only}, #{$medium-only}, #{$large-only} {
-// 	    // position: fixed;
-// 	    // padding: 0; // necessary to override above
-// 	    // background: white; // obscures logos anim
-// 	}
-
-// 	&.has-border {
-// 		@media #{$small-only} {
-// 		    border-bottom: 1px solid #E6E6E6;
-// 		    background: white;
-// 		}
-// 	}
-
-// 	.logo {
-// 		@media #{$small-only} {
-// 		    visibility: visible;
-// 		    display: inline-block !important; // is JS overriding this??
-// 		    padding: rem-calc(10 0);
-// 		}
-// 	}
-// }
-
 //=========================================
 //
 //=========================================

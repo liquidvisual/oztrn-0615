@@ -1,7 +1,7 @@
 /*
     SIDEBAR.CSS
 
-    - Last updated: ^^^^^^^^
+    - Last updated: 29.06.15
     - hello@liquidvisual.com
 */
 //-----------------------------------------------------------------
@@ -17,7 +17,11 @@ $sidebar-width: rem-calc(246) !default;
 
 .sidebar {
 	@include clearfix();
-	padding: rem-calc(15);
+	padding: rem-calc(0 15);
+
+	@media #{$medium-up} {
+	    padding: rem-calc(20);
+	}
 
 	@media #{$large-only} {
 	    padding-right: $sidebar-vertical-strip-width + rem-calc(30);
@@ -33,9 +37,9 @@ $sidebar-width: rem-calc(246) !default;
 	}
 }
 
-//=========================================
+//-----------------------------------------------------------------
 // Sidebar Content
-//=========================================
+//-----------------------------------------------------------------
 
 .sidebar-content {
 	position: relative;
@@ -68,9 +72,9 @@ $sidebar-width: rem-calc(246) !default;
 	}
 }
 
-//=========================================
-//
-//=========================================
+//-----------------------------------------------------------------
+// FOOTER
+//-----------------------------------------------------------------
 
 .sidebar-footer {
 	font-style: italic;
@@ -96,9 +100,9 @@ $sidebar-width: rem-calc(246) !default;
 	}
 }
 
-//=========================================
-//
-//=========================================
+//-----------------------------------------------------------------
+// VERTICAL STRIP
+//-----------------------------------------------------------------
 
 .sidebar-vertical-strip {
 	position: fixed;
@@ -143,5 +147,42 @@ $sidebar-width: rem-calc(246) !default;
 
 	img {
 		padding: rem-calc(15);
+	}
+}
+
+//-----------------------------------------------------------------
+// Sidebar Box
+//-----------------------------------------------------------------
+
+.sidebar-box {
+	background: $grey-color;
+	margin-bottom: rem-calc(20);
+	padding: rem-calc(20 20 30 20);
+
+	@media #{$medium-up} {
+	    margin: rem-calc(0 60 40 0);
+	}
+
+	h1, h2, h3, h4, h5, h6 {
+		font-size: $paragraph-font-size;
+		font-weight: normal;
+		margin-bottom: rem-calc(20);
+		color: $body-font-color !important; // fix later
+	}
+
+	ul {
+		list-style: none;
+		margin: 0;
+		text-transform: lowercase;
+		font-style: italic;
+	}
+
+	a {
+		@include transition('color');
+		color: darken($grey-color, 40%);
+
+		&:hover {
+		    color: black !important;
+		}
 	}
 }
