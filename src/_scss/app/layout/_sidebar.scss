@@ -82,7 +82,7 @@ $sidebar-width: rem-calc(246) !default;
 	@media #{$medium-only}, #{$large-only} {
 		position: absolute;
 		bottom: 0;
-		right: rem-calc(15);
+		right: rem-calc(20);
 		text-align: right;
 	}
 
@@ -142,8 +142,21 @@ $sidebar-width: rem-calc(246) !default;
 .side-box {
 	display: block;
 	background: white;
-	padding: rem-calc(5 10 10 10);
-	margin-bottom: rem-calc(15);
+	padding: rem-calc(5 10 15 10);
+	margin-bottom: 15px;
+	color: $body-font-color;
+	font-style: italic;
+
+	h3 {
+		line-height: 1;
+		margin-bottom: rem-calc(10);
+		font-weight: 100;
+	}
+
+	p {
+		font-size: rem-calc(11);
+		margin: 0;
+	}
 
 	img {
 		padding: rem-calc(15);

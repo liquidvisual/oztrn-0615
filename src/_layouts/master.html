@@ -37,11 +37,11 @@
     <!-- <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script> -->
 </head>
 <body>
-    <div class="lv-super dev-mode-enabled">
+    <div class="lv-super dev-mode-enabledX splash-screen-enabled">
         <div class="lv-page {{ page.theme }}">
 
             <!-- HEADER -->
-            <header class="global-header js-global-header FixedX">
+            <header class="global-header js-global-header">
                 {% include header.html %}
 
                 <!-- NAVIGATION -->
@@ -68,8 +68,11 @@
 
     <!-- OFF-CANVAS MENU -->
     <nav id="off-canvas-menu" class="off-canvas-menu" aria-hidden="true">
-        {% include navigation.html %}
+        {% include off_canvas_navigation.html %}
     </nav>
+
+    <!-- SPLASH SCREEN -->
+    <div class="splash-screen"></div>
 
     <!--[if lt IE 9]>
     <div class="lv-alert lv-unselectable">

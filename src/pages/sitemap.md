@@ -2,6 +2,7 @@
 layout: internal/text_page
 title: Sitemap
 permalink: /sitemap/
+theme: green-theme
 ---
 
 <h2>All Available Pages for {{ site.data.settings.title }}</h2>

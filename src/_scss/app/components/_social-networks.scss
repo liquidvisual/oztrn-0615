@@ -1,7 +1,7 @@
 /*
     SOCIAL-NETWORKS.CSS
 
-    - Last updated: 20.05.15
+    - Last updated: 29.06.15
     - hello@liquidvisual.com
 */
 //-----------------------------------------------------------------
@@ -12,6 +12,36 @@
 //-----------------------------------------------------------------
 
 .social-networks {
+    list-style: none;
+    margin: 0;
+    width: 100%; // center on mobile
+	text-align: center;
+}
+
+//-----------------------------------------------------------------
+// Contexts
+//-----------------------------------------------------------------
+
+//=========================================
+// Off Canvas
+//=========================================
+
+.off-canvas-menu .social-networks {
+	li {
+		display: inline-list;
+		float: left;
+
+		a {
+			padding-right: rem-calc(15);
+		}
+	}
+}
+
+//=========================================
+// Sidebar
+//=========================================
+
+.sidebar-vertical-strip .social-networks {
     position: absolute;
     bottom: rem-calc(15);
     left: 0;

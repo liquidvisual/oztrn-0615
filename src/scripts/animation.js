@@ -1,5 +1,5 @@
 /*
-    ANIMATION.JS - Last updated: 12.06.15
+    SPLASH-SCREEN.JS - Last updated: 30.06.15
 
     - Notes -
 
@@ -8,35 +8,35 @@
 //-----------------------------------------------------------------
 // Variables
 //-----------------------------------------------------------------
+
+var lvPage = $('.lv-page');
+var splashScreen = $('.splash-screen');
+var splashScreenViewed = localStorage.splashScreenViewed;
+var splashScreenEnabled = $('.splash-screen-enabled').length;
+
 //-----------------------------------------------------------------
 // Intro Animation
 //-----------------------------------------------------------------
 
 $(window).load(function() {
 
-	// Another approach - has more delay though
+	if (typeof(Storage) != "undefined" && splashScreenEnabled) {
 
-	// $('.trickle-logos-1').show().css('opacity', 0).transition({ opacity: 100 },
-	// 	800, function(){
-	// 		$('.trickle-logos-2').show().css('opacity', 0).transition({ opacity: 100 },
-	// 			800, function(){
-	// 				$('.trickle-logos-3').show().css('opacity', 0).transition({ opacity: 100 },
-	// 					800, function(){
-	// 						$('.hero-body-text').show().css('opacity', 0).transition({ opacity: 100 },
-	// 						 800, function(){
-	// 						 	$('.footer').show().css('opacity', 0).transition({ opacity: 100 }, 2000);
-	// 				});
-	// 			});
-	// 		});
-	// 	});
+		// Reset
+		// localStorage.splashScreenViewed = "";
 
-	if ($('.animation-enabled').length) {
-		$('.trickle-logos-1').show().css('opacity', 0).transition({ opacity: 100, delay: 0 }, 1000);
-		$('.trickle-logos-2').show().css('opacity', 0).transition({ opacity: 100, delay: 500 }, 1000);
-		$('.trickle-logos-3').show().css('opacity', 0).transition({ opacity: 100, delay: 1500 }, 1000);
-		$('.hero-body-text').show().css('opacity', 0).transition({ opacity: 100, delay: 2000 }, 1000);
-		$('.logo, .footer, .topbar').show().css('opacity', 0).transition({ opacity: 100, delay: 2500 }, 2000);
+		if (!splashScreenViewed) {
+			lvPage.css('visibility', 'visible');
+			splashScreen.css('visibility', 'visible').transition({ opacity: 0, delay: 1500 }, 1000, function(){ $(this).remove();});
+
+			// Store site visit
+			localStorage.splashScreenViewed = true;
+			return;
+		}
 	}
+
+	lvPage.css('visibility', 'visible');
+	splashScreen.remove();
 });
 
 //==================================================
