@@ -35,6 +35,9 @@ $(window).load(function() {
 		}
 	}
 
+	// Reset it
+	localStorage.splashScreenViewed = "";
+
 	lvPage.css('visibility', 'visible');
 	splashScreen.remove();
 });
