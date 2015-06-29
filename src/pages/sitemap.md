@@ -40,6 +40,13 @@ theme: green-theme
 
 <br>
 
-<h3>Notes</h3>
+<h2>Modes</h2>
 
-<p class="panel">Remove <b>'.dev-mode-enabled'</b> class near the body to disable the responsive helper widget.</p>
+
+
+<h3>Dev Mode</h3>
+<p class="panel">Remove <b>'.dev-mode-enabled'</b> on <b><i>'.lv-super'</i></b> to disable the responsive helper widget. Clicking on this widget will also highlight parts of containers to aid with distinguishing layouts.</p>
+
+<h3>Splash Screen</h3>
+<p class="panel">The <b>'.splash-screen-enabled'</b> class on <b><i>'.lv-super'</i></b> will enabled the splash screen for first time visits. This uses HTML local storage (not cookies) to log the visit and will only show ONCE.<br>
+To clear the key, remove the class, refresh and then re-enable.</p>
