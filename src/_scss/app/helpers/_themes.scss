@@ -38,6 +38,11 @@ $yellow-theme-color: #F9AF48;
 
 	.stage {
 		background-image: url(../img/template/coaching-bg.svg);
+
+		/* Target IE9,10,11 - SVG performs too poorly */
+		@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+			background-image: url(../img/template/coaching-bg.jpg);
+		}
 	}
 
 	.main h1,
@@ -121,6 +126,11 @@ $yellow-theme-color: #F9AF48;
 
 	.stage {
 		background-image: url(../img/template/consulting-bg.svg);
+
+		/* Target IE9,10,11 - SVG performs too poorly */
+		@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+			background-image: url(../img/template/consulting-bg.jpg);
+		}
 	}
 
 	.main h1,
@@ -156,6 +166,11 @@ $yellow-theme-color: #F9AF48;
 	.stage {
 		padding-bottom: 0; // no trailing
 		background-image: url(../img/template/training-bg.svg);
+
+		/* Target IE9,10,11 - SVG performs too poorly */
+		@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+			background-image: url(../img/template/training-bg.jpg);
+		}
 	}
 
 	// NO BG - used on staff members section
@@ -204,6 +219,11 @@ $yellow-theme-color: #F9AF48;
 
 	.stage {
 		background-image: url(../img/template/facilitating-bg.svg);
+
+		/* Target IE9,10,11 - SVG performs too poorly */
+		@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+			background-image: url(../img/template/facilitating-bg.jpg);
+		}
 	}
 
 	.main h1,
@@ -238,6 +258,11 @@ $yellow-theme-color: #F9AF48;
 
 	.stage {
 		background-image: url(../img/template/training-bg.svg);
+
+		/* Target IE9,10,11 - SVG performs too poorly */
+		@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+			background-image: url(../img/template/training-bg.jpg);
+		}
 	}
 
 	.main h1,
