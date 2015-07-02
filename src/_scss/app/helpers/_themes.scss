@@ -99,6 +99,20 @@ $yellow-theme-color: #F9AF48;
 		margin-bottom: rem-calc(30);
 	}
 
+	//=========================================
+	// Green Theme
+	//=========================================
+
+	&.green-theme-stipple-main-body-bg {
+		.main-body {
+			background: #E4F7F2;
+		}
+	}
+
+	//=========================================
+	// Green Theme Red Text
+	//=========================================
+
 	&.green-theme-red-text {
 		.main h1,
 		.main h2,
@@ -156,7 +170,7 @@ $yellow-theme-color: #F9AF48;
 }
 
 //=========================================
-// Orange Theme (exclusive to about)
+// Orange Theme (exclusive to "About")
 //=========================================
 
 .orange-theme {
@@ -185,20 +199,6 @@ $yellow-theme-color: #F9AF48;
 		}
 	}
 
-	// NO BG - used on staff members section
-	&.orange-theme-no-bg .stage {
-		background: none;
-	}
-
-	.main {
-		// margin-left: 15px;
-		// padding-top: rem-calc(60);
-
-		@media #{$xxlarge-up} {
-		    // margin-left: 0;
-		}
-	}
-
 	.main h1,
 	.main h2,
 	.main h3,
@@ -206,6 +206,21 @@ $yellow-theme-color: #F9AF48;
 	.main h5,
 	.main h6 {
 		color: $orange-theme-color;
+	}
+
+	//=========================================
+	// Orange Theme NO BACKGROUND (exclusive to "Staff")
+	//=========================================
+
+	// NO BG - used on staff members section
+	&.orange-theme-no-bg .stage {
+		background: none;
+
+		.main {
+			@media #{$xlarge-up} {
+			    padding-top: rem-calc(150);
+			}
+		}
 	}
 }
 

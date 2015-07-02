@@ -37,7 +37,7 @@
     <!-- <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script> -->
 </head>
 <body>
-    <div class="lv-super dev-mode-enabledX splash-screen-enabled">
+    <div class="lv-super dev-mode-enabledX animation-enabled">
         <div class="lv-page {{ page.theme }}">
 
             <!-- HEADER -->
@@ -71,8 +71,12 @@
         {% include off_canvas_navigation.html %}
     </nav>
 
+    {% comment %}
     <!-- SPLASH SCREEN -->
-    <div class="splash-screen"></div>
+    {% if page.url == "/" %}
+        <div class="splash-screen"></div>
+    {% endif %}
+    {% endcomment %}
 
     <!--[if lt IE 9]>
     <div class="lv-alert lv-unselectable">

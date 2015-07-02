@@ -48,6 +48,11 @@ $sidebar-width: rem-calc(246) !default;
 	background: $grey-color;
 	background-size: contain;
 
+	// Products & services - unique
+	h3 {
+		margin-bottom: rem-calc(5); //
+	}
+
 	@media #{$medium-up} {
 	    width: 65%;
 	    margin-bottom: 0;

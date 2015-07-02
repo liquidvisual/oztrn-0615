@@ -37,3 +37,11 @@
 .increase-bottom-margin {
 	margin-bottom: rem-calc(30);
 }
+
+.lv-super .button.dark-grey {
+	background: darken($grey-color, 8%); // bad bad bad
+
+	&:hover {
+		background: darken($grey-color, 15%); // bad bad bad
+	}
+}

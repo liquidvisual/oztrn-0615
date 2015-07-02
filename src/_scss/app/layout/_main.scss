@@ -73,7 +73,7 @@
 	// //=========================================
 
 	.main-body {
-		background: rgba(white, 0.9);
+		background: rgba(white, 0.8);
 
 		@media #{$xlarge-up} {
 			min-height: 850px; // needs to be higher than sidebar contents - make var?

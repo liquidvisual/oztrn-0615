@@ -36,6 +36,11 @@ $(window).load(function() {
 	// If seen already
 	lvPage.css('visibility', 'visible');
 	splashScreen.remove();
+
+	// Switch off
+	// lvPage.css('visibility', 'visible');
+	// splashScreen.css('visibility', 'visible').transition({ opacity: 0, delay: 1500 }, 1000, function(){ $(this).remove();});
+	// localStorage.splashScreenViewed = true; // Store site visit
 });
 
 //==================================================

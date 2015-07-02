@@ -42,7 +42,7 @@
 
 	h1, h2, h3, h4, h5, h6 {
 		@include transition('color');
-		margin: rem-calc(0 0 5 0);
+		margin: rem-calc(0 0 5 0) !important; // to override theme (sorry)
 		font-weight: 100;
 		font-size: rem-calc(20); // bake into headings?
 	}
