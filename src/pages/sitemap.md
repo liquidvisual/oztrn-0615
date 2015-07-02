@@ -43,15 +43,18 @@ theme: green-theme
 <h2>Modes</h2>
 
 <h3>Dev Mode</h3>
-<p class="panel">The <b>'.dev-mode-enabled'</b> class on <b><i>'.lv-super'</i></b> will enable the responsive helper widget. Clicking on this widget will also highlight parts of containers to aid with distinguishing layouts.</p>
+<p class="panel">The <b>'.dev-mode-enabled'</b> class on the div <b><i>'.lv-super'</i></b> will enable the responsive helper widget. Clicking on this widget will also highlight parts of containers to aid with distinguishing layouts.</p>
 
-<h3>Splash Screen</h3>
-<p class="panel">The <b>'.splash-screen-enabled'</b> class on <b><i>'.lv-super'</i></b> will enable the splash screen for first time visits. This uses HTML local storage (not cookies) to log the visit and will only show ONCE.<br>
-To clear the key, remove the class, refresh and then re-enable.</p>
+<h3>Animation Enabled</h3>
+<p class="panel">The <b>'.animation-enabled'</b> class on <b><i>'.lv-super'</i></b> will turn on the intro transitions for the homepage only.</p>
+
+<h3>Splash Screen (Removed)</h3>
+<strike><p class="panel">The <b>'.splash-screen-enabled'</b> class on the div <b><i>'.lv-super'</i></b> will enable the splash screen for first time visits. This uses HTML local storage (not cookies) to log the visit and will only show ONCE.<br>
+To clear the key, remove the class, refresh and then re-enable.</p></strike>
 
 <h2>Themes</h2>
 
-<p>"Theme" classes have been created in an attempt to sandbox styles that apply to individual pages. Each theme is essentially a unique and isolated set of styles which control font colours and background images. Each page can only contain <b>one</b> main theme, and the class needs to be applied to the div <b>".lv-page"</b> just below the opening body.</p>
+<p>"Theme" classes have been created in an attempt to sandbox styles that apply to individual pages. Each theme is essentially a unique and isolated set of styles which control font colours and background images. Each page can only contain <b>one</b> main theme, and the class needs to be applied to the div <b><i>'.lv-page'</i></b> just below the opening body.</p>
 
 <ul>
 	<li><strong>home-theme</strong></li>
