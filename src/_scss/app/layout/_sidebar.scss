@@ -68,7 +68,8 @@ $sidebar-width: rem-calc(246) !default;
 	}
 
 	.sidebar-content-scroller {
-		overflow-y: auto;
+		// overflow-y: auto;
+		overflow: hidden;
 
 		@media #{$xlarge-up} {
 		    padding: rem-calc(0 38);
