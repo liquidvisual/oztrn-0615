@@ -8,13 +8,14 @@
 // Variables
 //-----------------------------------------------------------------
 
-$blue-theme-color: #1FB8F3;
-$bronze-theme-color: #8B8584;
-$green-theme-color: #2DB475;
-$lime-theme-color: #8EC449;
-$orange-theme-color: #EF5B30;
-$red-theme-color: #FC0D1B;
-$yellow-theme-color: #F9AF48;
+$blue-theme-color: #1FB8F3 !default;
+$bronze-theme-color: #8B8584 !default;
+$green-theme-color: #2DB475 !default;
+$lime-theme-color: #8EC449 !default;
+$orange-theme-color: #EF5B30 !default;
+$red-theme-color: #FC0D1B !default;
+$yellow-theme-color: #F9AF48 !default;
+$purple-theme-color: #C35FB3 !default;
 
 //-----------------------------------------------------------------
 // Home Theme
@@ -77,11 +78,6 @@ $yellow-theme-color: #F9AF48;
 		background: $green-theme-color;
 	}
 
-	.stage {
-		background: none;
-		padding-bottom: 0; // no trailing image
-	}
-
 	.media-article h2,
 	.main-body a,
 	.media-link {
@@ -92,8 +88,26 @@ $yellow-theme-color: #F9AF48;
 		}
 	}
 
+	.stage {
+		background: none;
+		padding-bottom: 0; // no trailing image
+	}
+
 	.main h1,
-	.main h1 small {
+	.main h2,
+	.main h3,
+	.main h4,
+	.main h5,
+	.main h6 {
+		color: $green-theme-color;
+	}
+
+	//=========================================
+	// News Theme
+	//=========================================
+
+	&.green-theme-news .main h1,
+	&.green-theme-news .main h1 small {
 		color: $green-theme-color;
 		display: block;
 		margin-bottom: rem-calc(30);
@@ -106,22 +120,6 @@ $yellow-theme-color: #F9AF48;
 	&.green-theme-stipple-main-body-bg {
 		.main-body {
 			background: #E4F7F2;
-		}
-	}
-
-	//=========================================
-	// Green Theme Red Text
-	//=========================================
-
-	&.green-theme-red-text {
-		.main h1,
-		.main h2,
-		.main h3,
-		.main h4,
-		.main h5,
-		.main h6,
-		.main h1 small {
-			color: $red-theme-color;
 		}
 	}
 
@@ -207,21 +205,6 @@ $yellow-theme-color: #F9AF48;
 	.main h6 {
 		color: $orange-theme-color;
 	}
-
-	//=========================================
-	// Orange Theme NO BACKGROUND (exclusive to "Staff")
-	//=========================================
-
-	// NO BG - used on staff members section
-	&.orange-theme-no-bg .stage {
-		background: none;
-
-		.main {
-			@media #{$xlarge-up} {
-			    padding-top: rem-calc(150);
-			}
-		}
-	}
 }
 
 //=========================================
@@ -299,6 +282,45 @@ $yellow-theme-color: #F9AF48;
 	.main h5,
 	.main h6 {
 		color: $yellow-theme-color;
+	}
+}
+
+//=========================================
+// Purple Theme
+//=========================================
+
+.purple-theme {
+	.main .header,
+	.sidebar-vertical-strip {
+		background: $purple-theme-color;
+	}
+
+	.media-article h2,
+	.main-body a,
+	.media-link {
+		color: $purple-theme-color;
+
+		&:hover {
+			color: darken($purple-theme-color, 10%);
+		}
+	}
+
+	.stage {
+		background-image: url(../img/template/facilitating-bg.svg);
+
+		/* Target IE9,10,11 - SVG performs too poorly */
+		@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+			background-image: url(../img/template/facilitating-bg.jpg);
+		}
+	}
+
+	.main h1,
+	.main h2,
+	.main h3,
+	.main h4,
+	.main h5,
+	.main h6 {
+		color: $purple-theme-color;
 	}
 }
 
@@ -399,9 +421,47 @@ $yellow-theme-color: #F9AF48;
 	}
 
 	// Reveal logo
-	.main .logo,
+	// .main .logo,
 	.sidebar-vertical-strip-logo {
 		display: block;
+	}
+}
+
+//-----------------------------------------------------------------
+// Blank Stage Theme
+//-----------------------------------------------------------------
+
+.blank-stage-theme {
+	.stage {
+		background: none;
+	}
+}
+
+//-----------------------------------------------------------------
+// Used for Sitemap only
+//-----------------------------------------------------------------
+
+.default-colored-text-theme {
+	.main h1,
+	.main h2,
+	.main h3,
+	.main h4,
+	.main h5,
+	.main h6 {
+		color: $body-font-color;
+	}
+}
+
+//-----------------------------------------------------------------
+// exclusive to our-staff"
+//-----------------------------------------------------------------
+
+// NO BG - used on staff members section
+.staff-index-theme {
+	.main {
+		@media #{$xlarge-up} {
+		    padding-top: rem-calc(150);
+		}
 	}
 }
 

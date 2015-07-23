@@ -3,7 +3,7 @@ layout: internal
 sidebar_content: "sidebar/sidebar_navigation.html"
 ---
 
-{% assign staff = site.data.staff %}
+{% assign staff = site.data.sitemap[1].children[0].children %}
 
 <main class="main">
 	<div class="main-columns">
@@ -11,8 +11,8 @@ sidebar_content: "sidebar/sidebar_navigation.html"
 			{% for item in staff %}
 				<li>
 					<a class="staff-member-button" href="{{ item.url }}">
-						<img width="120" src="/img/content/staff-{{forloop.index}}.png">
-						<h3>{{ item.title }}</h3>
+						<img width="120" src="{{ item.image }}">
+						<h3 class="{{ item.color }}">{{ item.title }}</h3>
 					</a>
 				</li>
 			{% endfor %}

@@ -10,17 +10,46 @@
       include_children_in_nav: false
       children:
         - title: Denise Picton
-          url: "/about-us/our-staff/our-staff-item/#1"
+          url: "/about-us/our-staff/denise-picton/"
+          position: managing director
+          image: "/img/content/denise-picton.png"
+          image_alt: "/img/content/denise-picton-alt.jpg"
+          color: red-text-color
+
         - title: Alastair Dow
-          url: "/about-us/our-staff/our-staff-item/#2"
+          url: "/about-us/our-staff/alastair-dow/"
+          position: principal consultant
+          image: "/img/content/alastair-dow.png"
+          image_alt: "/img/content/alastair-dow-alt.jpg"
+          color: blue-text-color
+
         - title: David Waterford
-          url: "/about-us/our-staff/our-staff-item/#3"
-        - title: Sarah Sheath
-          url: "/about-us/our-staff/our-staff-item/#4"
+          url: "/about-us/our-staff/david-waterford/"
+          position: principal consultant
+          image: "/img/content/david-waterford.png"
+          image_alt: "/img/content/david-waterford-alt.jpg"
+          color: green-text-color
+
         - title: Jo Battersby
-          url: "/about-us/our-staff/our-staff-item/#5"
+          url: "/about-us/our-staff/jo-battersby/"
+          position: senior consultant
+          image: "/img/content/jo-battersby.png"
+          image_alt: "/img/content/jo-battersby-alt.jpg"
+          color: orange-text-color
+
         - title: Brenda Kuhr
-          url: "/about-us/our-staff/our-staff-item/#6"
+          url: "/about-us/our-staff/brenda-kuhr/"
+          position: principal consultant
+          image: "/img/content/brenda-kuhr.png"
+          image_alt: "/img/content/brenda-kuhr-alt.jpg"
+          color: lime-text-color
+
+        - title: Steph Jeuken
+          url: "/about-us/our-staff/steph-jeuken/"
+          position: senior consultant
+          image: "/img/content/steph-jeuken.png"
+          image_alt: "/img/content/steph-jeuken-alt.jpg"
+          color: purple-text-color
 
     - title : Clients
       url: /about-us/
@@ -28,10 +57,6 @@
       url: /about-us/
     - title: Latest News
       url: /about-us/latest-news/
-      include_children_in_nav: false
-      children:
-        - title: News Item
-          url: /about-us/latest-news/news-item/
 
 - title: "Products & Services"
   url: /products-and-services/
@@ -100,20 +125,23 @@
       url: /products-and-services/consulting/
       include_children_in_nav: false
       children:
-        - title: Program Review and Consulting
+        - title: Program Review and Evaluation
           url: "#"
-        - title: Management
+        - title: 'Providing "Sounding Posts" on Organisational  Issues'
           url: "#"
-        - title: Frontline Staff
+        - title: Citizen Juries and Community Engagement
           url: "#"
-        - title: Project
+        - title: Citizen Juries and Community Engagement (1)
           url: "#"
-        - title: Special Topic
+        - title: Problem Identification and Problem Solving
           url: "#"
-        - title: Training Your Managers
+        - title: Training Your People as Internal Consultants
           url: "#"
-        - title: Case Studies
+        - title: Consulting Case Studies
           url: "#"
+
+    - title: Organisational Development
+      url: /products-and-services/organisational-development/
 
     - title: Right Now
       url: /products-and-services/right-now-coaching/

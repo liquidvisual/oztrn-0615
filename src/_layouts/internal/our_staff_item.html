@@ -3,19 +3,23 @@ layout: internal
 sidebar_content: "sidebar/sidebar_navigation.html"
 ---
 
+{% assign page_index = page.side_nav_third_level_id | minus: 1 %}
+{% assign staff_member = site.data.sitemap[1].children[0].children[page_index] %}
+
 <main class="main">
 
 	<div class="main-columns">
 		<div class="main-col-1 main-body">
-			<h1>{{ page.title }} <small>Managing Director</small></h1>
+			<h1>{{ page.title }} <small>{{ staff_member.position }}</small></h1>
 
 			{{ content }}
+
 		</div>
 
 		<!-- Main Side Panel -->
 		<div class="main-col-2 main-side-panel text-center">
 
-			<img width="120" src="/img/content/staff-1.png">
+			<img width="120" src="{{ staff_member.image_alt }}">
 
 		</div> <!-- main-side-panel -->
 	</div> <!-- .main-columns -->

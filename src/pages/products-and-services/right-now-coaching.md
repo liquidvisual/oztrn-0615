@@ -1,11 +1,10 @@
 ---
-layout: internal/text_page
+layout: internal/right_now
 title: Right Now Coaching
 permalink: /products-and-services/right-now-coaching/
 theme: "bronze-theme"
 side_nav_top_level_id: 2
-side_nav_second_level_id: 5
-side_nav_third_level_id: 2
+side_nav_second_level_id: 6
 ---
 
 ### what do you want to learn more about?

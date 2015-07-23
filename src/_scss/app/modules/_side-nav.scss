@@ -27,8 +27,11 @@
 		color: lighten(#7C7776, 20%);
 	}
 
+	li.active-parent > ul {
+		margin-top: rem-calc(5);
+	}
+
 	li.active-parent > a {
-		margin-bottom: rem-calc(5);
 		color: black;
 	}
 

@@ -2,7 +2,7 @@
 layout: internal/text_page
 title: Sitemap
 permalink: /sitemap/
-theme: green-theme
+theme: "green-theme default-colored-text-theme"
 ---
 
 <h2>All Available Pages for {{ site.data.settings.title }}</h2>
@@ -56,27 +56,36 @@ To clear the key, remove the class, refresh and then re-enable.</p></strike>
 
 <p>"Theme" classes have been created in an attempt to sandbox styles that apply to individual pages. Each theme is essentially a unique and isolated set of styles which control font colours and background images. Each page can only contain <b>one</b> main theme, and the class needs to be applied to the div <b><i>'.lv-page'</i></b> just below the opening body.</p>
 
+<h3 style="text-transform: uppercase;">GENERIC THEMES</h3>
+
 <ul>
-	<li><strong>home-theme</strong></li>
-	<li><strong>blue-theme</strong></li>
-	<li><strong>bronze-theme</strong></li>
-	<li><strong>fire-theme</strong></li>
-	<li>
+	<li class="blue-text-color"><strong>blue-theme</strong></li>
+	<li class="green-text-color">
 		<strong>green-theme</strong>
 		<ul>
 			<li><strong>green-theme-stipple-main-body-bg</strong> - (optional)</li>
-			<li><strong>green-theme-red-text</strong></li>
+			<li><strong>green-theme-news</strong> (adds news styles)</li>
 		</ul>
 	</li>
-	<li><strong>lime-theme</strong></li>
-	<li>
-		<strong>orange-theme</strong> - exclusive to "about"
-		<ul>
-			<li><strong>orange-theme-no-bg</strong> - exclusive to "staff"</li>
-		</ul>
-	</li>
-	<li><strong>red-theme</strong></li>
-	<li><strong>yellow-theme</strong></li>
+	<li class="lime-text-color"><strong>lime-theme</strong></li>
+	<li class="orange-text-color"><strong>orange-theme</strong></li>
+	<li class="red-text-color"><strong>red-theme</strong></li>
+	<li class="yellow-text-color"><strong>yellow-theme</strong></li>
+</ul>
 
+<h3 style="text-transform: uppercase;">UNIQUE THEMES</h3>
+
+<ul>
+	<li><strong>home-theme</strong> (exclusive to index - affects layout)</li>
+	<li class="bronze-text-color"><strong>bronze-theme</strong> (exclusive to RightNow)</li>
+	<li><strong>fire-theme</strong> (exclusive to Contact)</li>
+	<li><strong>staff-index-theme</strong> (exclusive to our-staff)</li>
+</ul>
+
+<h3 style="text-transform: uppercase;">ADDON THEMES</h3>
+
+<ul>
+	<li><strong>blank-stage-theme</strong> (Clears stage of background)</li>
+	<li><strong>default-colored-text-theme</strong> (Prevents heading colors - for sitemap only)</li>
 </ul>
 

@@ -58,7 +58,8 @@
 	&.fill-primary-color,
 	&.fill-secondary-color,
 	&.fill-tertiary-color,
-	&.fill-quaternary-color {
+	&.fill-quaternary-color,
+	&.fill-quinary-color {
 		color: white;
 	}
 
@@ -84,6 +85,12 @@
 		background: $quaternary-color;
 		&:hover {
 			background: darken($quaternary-color, 10%);
+		}
+	}
+	&.fill-quinary-color {
+		background: $quinary-color;
+		&:hover {
+			background: darken($quinary-color, 10%);
 		}
 	}
 }
@@ -121,6 +128,34 @@
 
 	&:hover {
 		color: darken(#ED5C31, 30%);
+	}
+}
+
+//-----------------------------------------------------------------
+// Login Button (special - right now)
+//-----------------------------------------------------------------
+
+.login-button {
+	display: block;
+
+	@media #{$medium-up} {
+	    margin-right: rem-calc(60);
+	}
+
+	.img {
+		background: $grey-color;
+		padding: rem-calc(15 20 10 15);
+	}
+
+	.button {
+		display: block;
+		min-width: 0;
+		background: $bronze-theme-color;
+		color: white;
+	}
+
+	&:hover .button {
+		background: darken($bronze-theme-color, 10%);
 	}
 }
 

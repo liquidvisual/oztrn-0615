@@ -15,7 +15,7 @@ layout: master
 		<div class="sidebar-content-scroller">
 
 			{% if page.sidebar_content %}
-			    {% include {{ page.sidebar_content }} exclude_top_level=true %}
+			    {% include {{ page.sidebar_content }} exclude_top_level=false %}
 			{% else %}
 				{% include sidebar/sidebar_default.html %}
 			{% endif %}

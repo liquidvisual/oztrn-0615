@@ -5,12 +5,25 @@
     - hello@liquidvisual.com
 */
 //-----------------------------------------------------------------
-// Global Variables
+// Theme Colors
+//-----------------------------------------------------------------
+
+$blue-theme-color: #1FB8F3;
+$bronze-theme-color: #8B8584;
+$green-theme-color: #2DB475;
+$lime-theme-color: #8EC449;
+$orange-theme-color: #EF5B30;
+$red-theme-color: #FC0D1B;
+$yellow-theme-color: #F9AF48;
+$purple-theme-color: #C35FB3;
+
+//-----------------------------------------------------------------
+// Sidebar
 //-----------------------------------------------------------------
 
 $sidebar-vertical-strip-width: rem-calc(96);
 $sidebar-width: rem-calc(246);
 
 //=========================================
-//
+// Text Colors
 //=========================================

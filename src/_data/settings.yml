@@ -8,7 +8,7 @@ description: "..."
 
 # Contact Info
 email: oztrain@oztrain.com.au
-phone: +61 8 8100 2800
+phone: (08) 8100 2800
 fax: (05) 555 555
 address: "Suite 903, The Aurora Building<br> 147 Pirie Street Adelaide<br> South Australia 5000"
 
@@ -18,7 +18,7 @@ twitter: "https://twitter.com/oztrainau"
 linked_in: "https://www.linkedin.com/company/oz-train"
 
 # Google Map
-google_map: ""
+google_map: "https://www.google.com.au/maps/place/Oz%3ETrain/@-34.925806,138.605073,17z/data=!3m1!4b1!4m2!3m1!1s0x6ab0ced13e03ba1b:0xa09904a9cbc14982"
 
 # Google Analytics
 google_analytics: "UA-XXXXXXXX-X"

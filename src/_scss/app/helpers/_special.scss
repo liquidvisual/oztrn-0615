@@ -8,12 +8,27 @@
 // Variables
 //-----------------------------------------------------------------
 //-----------------------------------------------------------------
-// Special
+// Text Color
 //-----------------------------------------------------------------
 
 .primary-color {
     color: $primary-color;
 }
+
+// Used mainly for Staff Index
+
+.blue-text-color { color: $blue-theme-color !important; }
+.bronze-text-color { color: $bronze-theme-color !important; }
+.green-text-color { color: $green-theme-color !important; }
+.lime-text-color { color: $lime-theme-color !important; }
+.orange-text-color { color: $orange-theme-color !important; }
+.red-text-color { color: $red-theme-color !important; }
+.yellow-text-color { color: $yellow-theme-color !important; }
+.purple-text-color { color: $purple-theme-color !important; }
+
+//-----------------------------------------------------------------
+// Special
+//-----------------------------------------------------------------
 
 .section-text {
 	padding-bottom: rem-calc(40);

@@ -1,8 +1,12 @@
 {% comment %}
 <!--
-    Updated: 31.05.15
+    Updated: 23.07.15
 
     - Notes -
+
+    Warning: Make sure "our-services-item" etc appears only once in sitemap - hash tag rest
+
+    58: <li class="{% if item.url == page.url or forloop.index == third_level_id %} active {% endif %}">
 
     When 'top_level_id' is passed, data is pulled from requested node in /data/sitemap.yml creating nav list.
     Optional: 'exclude_top_level' can be passed through the include, skipping the top level of the side nav.
@@ -39,7 +43,7 @@
 
         {% comment %} TOP LEVEL (Optional) {% endcomment %}
         {% unless exclude_top_level %}
-        <li class="{% if top_level_node.url == page.url %} active {% endif %}">
+        <li class="{% if top_level_node.url == page.url %} active-parent active {% endif %}">
             <a href="{{ top_level_node.url }}">{{ top_level_node.title }}</a>
         </li>
         {% endunless %}

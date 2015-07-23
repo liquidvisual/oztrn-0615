@@ -58,6 +58,7 @@
 		}
 
 		@media #{$medium-up} {
+		    // width: 30%; // because columns don't actually touch (?)
 		    width: 38%;
 		}
 
